@@ -41,22 +41,19 @@
 56-    java.io.UncheckedIOException at HeroGeometryTest.java:9
 57-        Caused by: java.io.FileNotFoundException at HeroGeometryTest.java:9
 58-
-59:SpriteRegressionTest > everyDeclaredFortnitePngProducesFiniteContour() FAILED
-60-    org.opentest4j.AssertionFailedError at SpriteRegressionTest.java:11
+59:RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
+60-    java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
 61-
-62:RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
-63-    java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
-64-
-65-252 tests completed, 13 failed
+62-252 tests completed, 12 failed
 --
-67:> Task :test FAILED
-68-
-69-FAILURE: Build failed with an exception.
-70-
-71:* What went wrong:
-72-Execution failed for task ':test'.
-73-> There were failing tests. See the report at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-Mobil/build/reports/tests/test/index.html
-74-
+64:> Task :test FAILED
+65-
+66-FAILURE: Build failed with an exception.
+67-
+68:* What went wrong:
+69-Execution failed for task ':test'.
+70-> There were failing tests. See the report at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-Mobil/build/reports/tests/test/index.html
+71-
 --
-78:BUILD FAILED in 22s
-79-4 actionable tasks: 2 executed, 2 up-to-date
+75:BUILD FAILED in 14s
+76-4 actionable tasks: 2 executed, 2 up-to-date

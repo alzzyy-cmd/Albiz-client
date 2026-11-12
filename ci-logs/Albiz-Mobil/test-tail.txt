@@ -56,13 +56,10 @@ HeroGeometryTest > gutsBuildsActualBoundedMesh() FAILED
     java.io.UncheckedIOException at HeroGeometryTest.java:9
         Caused by: java.io.FileNotFoundException at HeroGeometryTest.java:9
 
-SpriteRegressionTest > everyDeclaredFortnitePngProducesFiniteContour() FAILED
-    org.opentest4j.AssertionFailedError at SpriteRegressionTest.java:11
-
 RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
     java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
 
-252 tests completed, 13 failed
+252 tests completed, 12 failed
 
 > Task :test FAILED
 
@@ -75,5 +72,5 @@ Execution failed for task ':test'.
 * Try:
 > Run with --scan to get full insights from a Build Scan (powered by Develocity).
 
-BUILD FAILED in 22s
+BUILD FAILED in 14s
 4 actionable tasks: 2 executed, 2 up-to-date
