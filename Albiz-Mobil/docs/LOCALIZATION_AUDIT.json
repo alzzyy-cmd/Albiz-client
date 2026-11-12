@@ -1,10 +1,10 @@
 {
-  "text_files_read": 1416,
-  "text_bytes_read": 8547924,
-  "catalog_keys_per_language": 3210,
-  "distinct_english_values": 2850,
+  "text_files_read": 1414,
+  "text_bytes_read": 8546395,
+  "catalog_keys_per_language": 3212,
+  "distinct_english_values": 2852,
   "module_descriptions_checked": 151,
-  "setting_constructor_strings_checked": 1478,
+  "setting_constructor_strings_checked": 1480,
   "uncatalogued_nontechnical_constructor_strings": [],
   "allowed_technical_values": [
     "10m",

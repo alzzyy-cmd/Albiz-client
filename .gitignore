@@ -1,0 +1,10 @@
+# Binary assets restored by restore_assets.py (reproducible, so not stored in Git)
+Albiz-*/src/main/resources/assets/albiz/**/*.png
+Albiz-*/src/main/resources/assets/albiz/**/*.jpg
+Albiz-*/src/main/resources/assets/albiz/**/*.ogg
+Albiz-*/src/main/resources/assets/albiz/**/*.ttf
+Albiz-*/src/main/resources/assets/albiz/**/*.otf
+Albiz-*/src/main/resources/assets/albiz/**/*.pcm
+Albiz-*/src/main/resources/assets/albiz/**/*.glb
+Albiz-*/src/main/resources/assets/albiz/**/*.anc
+Albiz-*/src/main/resources/assets/albiz/natives/

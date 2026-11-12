@@ -1,6 +1,6 @@
 file	bytes	sha256	legacy_identity_matches	horus_matches
 src/main/java/imgui/gl3/AlbizGl3.java	4619	0aa4ce3d5afce927c79d4fe745be4d1a07826cb73bf2f43d13c57134483bddf2	0	0
-src/main/java/net/albiz/client/AlbizClientMod.java	8254	728db1852effd28cf24a499dee79043cecef31fd561b5294f692d98ea336f1e1	0	0
+src/main/java/net/albiz/client/AlbizClientMod.java	9033	41d33344ebbe2198eab06d418dcbbb6b09f9acebc3c42158da4fbe2169c55cb4	0	0
 src/main/java/net/albiz/client/BuildConfig.java	389	bfa23f8350317b7798e413a639d45d81c0b049b729f6a463cee8159a8dded9a4	0	0
 src/main/java/net/albiz/client/ClientBrand.java	356	0a0fcfa2de20cecf299da048f91fef0141e4a0f8dccb52e2861f021ec1fc87b7	0	0
 src/main/java/net/albiz/client/addon/AddonManager.java	5929	2b1fe6a17a8ad0be841e47533002d70590ee38514f37293c28d4d5b7415c5138	0	0
@@ -21,7 +21,7 @@ src/main/java/net/albiz/client/config/ProfileException.java	264	9b10549f32efedb8
 src/main/java/net/albiz/client/config/ServerAddresses.java	3440	4085462a60d56a22e385c5f61c41d7d3ecaae10e8db6cac908616c2ecc82a11d	0	0
 src/main/java/net/albiz/client/config/ShareDictionary.java	16194	0af0e4d9248fc7cc3e781bc3c06823ee3c3621911913cb2ff379db56e6bbc928	0	0
 src/main/java/net/albiz/client/config/Surface.java	4315	86e617a8d4938c86f9b422d87726ca89cf74535755b25a88acb7f3249a6f3b4f	0	0
-src/main/java/net/albiz/client/config/ThemeStore.java	17213	cf87bd3cfe2bd28ca0613cb2a36f1b979054d16659585ff588f5e067607d2944	2	0
+src/main/java/net/albiz/client/config/ThemeStore.java	17426	d0d4c28f3a6cdd96b440ef64ad7eb8d5aece96b68ff170cec872c1886d1d593c	2	0
 src/main/java/net/albiz/client/diagnostics/ChunkReceiptLog.java	4190	ecc5055d62e72bc249b66f4b8af51b92c01e4b2aeb8568a4b9b8d997a498935a	0	0
 src/main/java/net/albiz/client/diagnostics/CompactBlockBatch.java	2421	9a9efd79a9c2b7bfca607185108d928cb2dd17a935d105757b292d100bf8f51e	0	0
 src/main/java/net/albiz/client/diagnostics/PacketCaptureWriter.java	7296	e19f58561352011482929d1fbf45c59ad3f2f01a2c25ef1a23d73fd0927859ee	0	0
@@ -136,7 +136,7 @@ src/main/java/net/albiz/client/gui/BlockListEditor.java	46890	fb1296e8b36867c23a
 src/main/java/net/albiz/client/gui/BorderlessFullscreen.java	985	46e5c7a60b8dd54605ccb2679308a2c2cbc2c4605c06ec71c5ffb03a89af4e33	0	0
 src/main/java/net/albiz/client/gui/BrandPalette.java	768	1feb21f7a6d7b567870cabccb3e81ed007941a40185520041e59babfa3dda6da	0	0
 src/main/java/net/albiz/client/gui/ChallengeToast.java	9015	b49210f180052655a66b95768631a8476fb9067d9451eff3cc40812b79a5571b	0	0
-src/main/java/net/albiz/client/gui/ClickGuiRenderer.java	150234	fd1fd8b5cd84ffc9d6a95e8edc3741025f729dcfe4a553faa352200eb98c9285	0	0
+src/main/java/net/albiz/client/gui/ClickGuiRenderer.java	150251	2d3cc453b88429ab4d87aab6ea1b5504665564e397d155bb558285e5e1d684cf	0	0
 src/main/java/net/albiz/client/gui/CooldownTray.java	14394	aed55eb1042040591cdeb5915deaa350627d2b97df79712360f4727e10486fce	0	0
 src/main/java/net/albiz/client/gui/DonutGoliathMapData.java	7376	3f3b2ebee638bd601c43133c3225f7275daf2e6954533eb2d58c815ede37066c	0	0
 src/main/java/net/albiz/client/gui/FavoriteSelection.java	955	9b271329681a727eb393e35e3858f56997660fba6d4a5838311e8919fb9c60b3	0	0
@@ -377,7 +377,7 @@ src/main/java/net/albiz/client/module/StableId.java	1700	d53af171c07e3740f9bef13
 src/main/java/net/albiz/client/module/impl/client/CreamyKeysModule.java	3127	85e0a65543a4533aecf86036dd95e1f0e150e8af543ce87912b3583814549802	0	0
 src/main/java/net/albiz/client/module/impl/client/HotkeysModule.java	731	17a4e306684648667f8a24ddaeb4203806e464c553d8bc01a84327e829d65c1f	0	0
 src/main/java/net/albiz/client/module/impl/client/HudModule.java	6974	07ca2ecfabee85fefee34df4cc2ae7c1c997032db7f871914010a1ff22af235e	0	0
-src/main/java/net/albiz/client/module/impl/client/PerformanceModule.java	5501	e310fd3f5f7204f71442ada87c4339646e253ada43267a4b6e315e53533006fe	0	0
+src/main/java/net/albiz/client/module/impl/client/PerformanceModule.java	5489	59c44ff661e97b883c74b2898124960c77949c773d29b80de905b40d20dcb772	0	0
 src/main/java/net/albiz/client/module/impl/client/RadarModule.java	1825	deceef1bad334c62662d4727e8679928902427f818d2021225ebe9689fea0175	0	0
 src/main/java/net/albiz/client/module/impl/client/RegionMapModule.java	2450	270f73d34cee3d5327cb63800376d5f90e3a4c91543b4c7e1c71103daf41752b	0	0
 src/main/java/net/albiz/client/module/impl/client/SoundFeedbackModule.java	3539	feb9809dcf2c1220a5addc45bc4c4bb2aead348986103f7bfbccec5b3ed3171e	0	0
@@ -985,7 +985,7 @@ src/main/java/net/albiz/client/webhook/WebhookPayloadBuilder.java	1530	f02c89040
 src/main/java/net/albiz/client/webhook/WebhookService.java	1833	09c01b96aa757f05f9ebf814d62aab7b998abb3cf3cc82b54281199aa76cebbe	0	0
 src/main/java/net/albiz/launcher/InstallNotice.java	2534	169bb1df0d166c5db1b612e32d7d44f55fdbbd90f34619c15a81116a5a61a0a6	0	0
 src/main/resources/SECURITY.md	554	4ceafb26ef6e95ba207ce2ea97e2e7fe0fd1b32ce443ff63c88aafb6c90bff42	1	0
-src/main/resources/albiz-profile.properties	11	d33690fb4f3db397c4b52d3b956726c93f5afd63f5a884adcb359781c78c0260	0	0
+src/main/resources/albiz-profile.properties	15	15d6e3f07d8f0de0fc7080f7117948fd00b5e25911257d2253884bdf952e6fe9	0	0
 src/main/resources/albiz.easyplace.mixins.json	283	8db3f48bc962b60c9a8df8ae55a139d58578a684e2359cd832a40cd867948316	0	0
 src/main/resources/albiz.indigo.mixins.json	278	c6a0fdba50936da550e1a2b6397e7eb604b8f0bcd463386a16017d5e50e43aa9	0	0
 src/main/resources/albiz.mixins.json	5103	213b0c1ffe85e192e8468e26999434a20920a0dd6ef4af2d617be711b89c35d2	0	0
@@ -1161,8 +1161,8 @@ src/main/resources/assets/albiz/items/totem/void.json	89	c7b011315d5a67c5a2f717b
 src/main/resources/assets/albiz/items/totem/wisp.json	89	5944dd2cf6e068c02b244e3b3687d39c26b0e299256f974af73b70ee78d389ca	0	0
 src/main/resources/assets/albiz/items/totem/xkisses_pink_blue.json	102	52bd2b5eb3122698ae0bd132564ebaf1ac6447f23b3cb68a350f1a6af6f6fe7e	0	0
 src/main/resources/assets/albiz/items/totem/zombie.json	91	846047454fb9a4804a17cbd0490b16b315b0678ce9fe4ca7b4f879dd91901707	0	0
-src/main/resources/assets/albiz/lang/en_us.json	164414	fccd37ad350274ca0a3f1d8d9e0681beea0b4b0faa744eb9872b6f327fb26516	2	1
-src/main/resources/assets/albiz/lang/tr_tr.json	181919	8c57db1c5645ae7d8df5c633988af605806385b9f5a1f453891dc29456727f4a	0	0
+src/main/resources/assets/albiz/lang/en_us.json	164489	f94162d4d0a7423479fac1e04a7853241a70de72cc32aa8b2bbede911aff09b2	2	1
+src/main/resources/assets/albiz/lang/tr_tr.json	181995	4abfa7be839f82581f2d01dd47c074f8363a7a3e968205809c82e0c220d40c97	0	0
 src/main/resources/assets/albiz/licenses/CC-BY-NC-SA-4.0.txt	19018	600ca4e25fe11762b75a97e714707fab48bb778374e92d24c6ca068791661c11	0	0
 src/main/resources/assets/albiz/licenses/CHARACTERS.md	3549	fd7e0b5a011478ae356503eabfa5911b79d6ab0f954be36912e5d5d2b329e808	0	0
 src/main/resources/assets/albiz/licenses/SOBER-FONT-LICENSES.txt	26647	81a0ee171f78f9873fe27fc68b53eb01ff16ee76fc97cd8c291da0c5e022ae5f	0	0
@@ -1369,9 +1369,7 @@ src/main/resources/assets/albiz/textures/gui/flame.png.mcmeta	25	4753233f58cd45f
 src/main/resources/assets/albiz/textures/gui/gem.png.mcmeta	25	4753233f58cd45fb5836e7d3e0250909f469a0c6c5fb4216fb6e587b7cd6e198	0	0
 src/main/resources/assets/albiz/textures/gui/sakura_backdrop.png.mcmeta	59	c01a8f77c3720cc5ff7b9bf9868b931beb03a0369f316e872610bfbf43ab05ef	0	0
 src/main/resources/assets/albiz/textures/gui/sparkles.png.mcmeta	25	4753233f58cd45fb5836e7d3e0250909f469a0c6c5fb4216fb6e587b7cd6e198	0	0
-src/main/resources/fabric.mod.json	2666	d5f5c20a56bbc81415d614f13a37cbb65f45b2497b159593961eab8dac54e317	2	0
-src/main/resources/keep_albiz-profile.properties	15	15d6e3f07d8f0de0fc7080f7117948fd00b5e25911257d2253884bdf952e6fe9	0	0
-src/main/resources/keep_fabric.mod.json	2670	c49c2f719e9a8c4f2d248461788109ed4d4de2d98dee7f464da572dfe7924e4f	2	0
+src/main/resources/fabric.mod.json	2670	c49c2f719e9a8c4f2d248461788109ed4d4de2d98dee7f464da572dfe7924e4f	2	0
 src/test/java/net/albiz/client/RecoveryTest.java	7131	f9745afd7a0611d035427742ee0c7a898c2db24631455508b56c17bb6664bbae	2	0
 src/test/java/net/albiz/client/config/ConfigPathProbe.java	346	24a0c8ea6416c390d8c7cdcd98854d73821d10c07076a550449a3a572c486411	0	0
 src/test/java/net/albiz/client/config/UnicodeMigrationTest.java	2945	05dc9a4d776747632a7ee27d1f67c06089d8d607e6b4842de6c265466d1d3227	3	0

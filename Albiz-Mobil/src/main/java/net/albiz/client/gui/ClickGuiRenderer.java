@@ -2024,7 +2024,7 @@ public final class ClickGuiRenderer {
       this.sectionLabel("Layout", pad);
       this.settingRows(pad, contentW, theme.rounding, theme.moduleDividers, theme.backgroundDim, theme.menuBlur);
       this.sectionLabel("Interface", pad);
-      this.settingRows(pad, contentW, theme.uiScale, theme.font, theme.animationSpeed, theme.animateLines, theme.customMainMenu, theme.communityPopup);
+      this.settingRows(pad, contentW, theme.menuStyle, theme.uiScale, theme.font, theme.animationSpeed, theme.animateLines, theme.customMainMenu, theme.communityPopup);
       this.sectionLabel("Settings Panel Animation", pad);
       this.settingRows(
          pad, contentW, theme.settingsTransition, theme.transitionDuration, theme.transitionEasing, theme.transitionDistance, theme.transitionOpacity,

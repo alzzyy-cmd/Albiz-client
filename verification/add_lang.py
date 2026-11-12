@@ -24,6 +24,8 @@ LABELS = {
  "Chunks with a cluster or one player-made sign.": "Bir küme ya da tek bir oyuncu yapımı iz bulunan chunk'lar.",
  "Strong Chunk Color": "Güçlü Chunk Rengi",
  "Chunks with several kinds of evidence.": "Birkaç farklı türde kanıt bulunan chunk'lar.",
+ "Menu style": "Menü stili",
+ "Sober": "Sober",
  "Range": "Menzil", "Line Width": "Çizgi Kalınlığı", "Through Walls": "Duvar Arkası",
  "Color": "Renk", "Friend Color": "Arkadaş Rengi", "Performance": "Performans", "Custom": "Özel",
 }

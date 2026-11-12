@@ -54,6 +54,8 @@ public final class ThemeStore {
    public final NumberSetting uiScale = new NumberSetting("UI scale", net.albiz.client.platform.PlatformInfo.isMobile() ? 1.2F : 1.0F, 0.75F, 2.0F).step(0.05F);
    public final ModeSetting font = new ModeSetting("Font", UiFont.GEIST.label, UiFont.labels());
    public final NumberSetting animationSpeed = new NumberSetting("Animation speed", 1.3F, 0.0F, 2.0F).step(0.1F);
+   /** Which menu the open-GUI key shows: the Sober-style menu or the classic Albiz ImGui menu. */
+   public final ModeSetting menuStyle = new ModeSetting("Menu style", "Sober", "Sober", "Albiz");
    public final ModeSetting settingsTransition = new ModeSetting("Settings transition", "Smooth", "Smooth", "Fast", "Soft", "Custom", "Off");
    public final NumberSetting transitionDuration = new NumberSetting("Transition duration", 320.0F, 60.0F, 1200.0F).step(20.0F);
    public final ModeSetting transitionEasing = new ModeSetting("Transition easing", "Ease Out", "Linear", "Ease Out", "Ease In Out", "Ease Out Strong", "Overshoot");
@@ -86,7 +88,7 @@ public final class ThemeStore {
          List.of(
             this.platform, this.language, this.accent, this.rounding, this.backgroundDim, this.menuBlur, this.moduleDividers, this.uiScale, this.font, this.animationSpeed, this.animateLines,
             this.settingsTransition, this.transitionDuration, this.transitionEasing, this.transitionDistance, this.transitionOpacity, this.transitionScale,
-            this.transitionDirection
+            this.transitionDirection, this.menuStyle
          )
       );
 

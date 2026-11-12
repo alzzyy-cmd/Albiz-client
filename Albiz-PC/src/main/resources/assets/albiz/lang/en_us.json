@@ -3208,5 +3208,7 @@
   "label.b96ac3fd90a101": "Suspicious Chunk Color",
   "label.10c3a46552160f": "Chunks with a cluster or one player-made sign.",
   "label.11900bc6aea2af": "Strong Chunk Color",
-  "label.5784cbaa5b2d78": "Chunks with several kinds of evidence."
+  "label.5784cbaa5b2d78": "Chunks with several kinds of evidence.",
+  "label.f62389b3782eaf": "Menu style",
+  "label.e4831b1b775620": "Sober"
 }

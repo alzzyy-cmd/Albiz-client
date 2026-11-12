@@ -112,7 +112,7 @@ public final class AlbizClientMod implements ClientModInitializer {
                   if (net.albiz.client.port.soberui.SoberUi.isMenu(client.field_1755)) {
                      client.method_1507(null);
                   } else {
-                     client.method_1507(new ImGuiScreen());
+                     client.method_1507(guiScreen(client));
                   }
                }
 
@@ -129,11 +129,32 @@ public final class AlbizClientMod implements ClientModInitializer {
          && window == client.method_22683().method_4490() && openGuiKey.method_1417(event);
    }
 
+   /**
+    * The menu the open-GUI key shows. "Menu style" in the theme settings picks the Sober-style menu or
+    * the classic Albiz menu; holding Left Ctrl opens the other one, so either is always reachable.
+    */
+   private static net.minecraft.class_437 guiScreen(class_310 client) {
+      boolean sober = ThemeStore.get().menuStyle.is("Sober");
+      if (client.method_22683() != null && AlbizKeyPolling.isKeyDown(client.method_22683(), 341)) {
+         sober = !sober;
+      }
+
+      if (sober) {
+         try {
+            return net.albiz.client.port.soberui.SoberUi.menu();
+         } catch (RuntimeException e) {
+            LOGGER.error("[Albiz] Sober-style menu failed to open; using the classic menu", e);
+         }
+      }
+
+      return new ImGuiScreen();
+   }
+
    public static boolean toggleGuiFromKey() {
       class_310 client = class_310.method_1551();
       if (client == null) return false;
       if (client.field_1755 == null) {
-         client.method_1507(new ImGuiScreen());
+         client.method_1507(guiScreen(client));
          return true;
       } else {
          if (net.albiz.client.port.soberui.SoberUi.isMenu(client.field_1755) || client.field_1755 instanceof ImGuiScreen gui && !gui.capturesKeys()) {

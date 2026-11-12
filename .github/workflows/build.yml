@@ -19,6 +19,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+      - name: Restore binary assets (Sober JAR and older Albiz JAR, SHA-256 verified)
+        run: python3 restore_assets.py ${{ matrix.project }}
       - name: Compile and package
         working-directory: ${{ matrix.project }}
         run: |
@@ -51,7 +53,25 @@ jobs:
           done
           mkdir -p dist
           if [ -f "${{ matrix.project }}/build/libs/albiz-1.0.jar" ]; then
-            cp "${{ matrix.project }}/build/libs/albiz-1.0.jar" "dist/${{ matrix.project }}.jar"
+            if [ "${{ matrix.project }}" = "Albiz-Mobil" ]; then
+              # Same as tools/package_revision.py does for mobile: drop the desktop ImGui natives.
+              python3 - <<'PY'
+          import json, zipfile
+          src, dst = "Albiz-Mobil/build/libs/albiz-1.0.jar", "dist/Albiz-Mobil.jar"
+          with zipfile.ZipFile(src) as zin, zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED) as zout:
+              for item in zin.infolist():
+                  if item.is_dir() or item.filename.startswith("META-INF/jars/imgui-java-natives-"):
+                      continue
+                  data = zin.read(item.filename)
+                  if item.filename == "fabric.mod.json":
+                      meta = json.loads(data)
+                      meta["jars"] = [j for j in meta.get("jars", []) if "imgui-java-natives-" not in j["file"]]
+                      data = (json.dumps(meta, indent=2) + "\n").encode()
+                  zout.writestr(item.filename, data)
+          PY
+            else
+              cp "${{ matrix.project }}/build/libs/albiz-1.0.jar" "dist/${{ matrix.project }}.jar"
+            fi
             git add dist
           fi
           git config user.name "github-actions[bot]"
