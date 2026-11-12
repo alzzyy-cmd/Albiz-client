@@ -36,6 +36,6 @@ Note: Recompile with -Xlint:unchecked for details.
 
 [Incubating] Problems report is available at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-PC/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 1m 31s
+BUILD SUCCESSFUL in 1m 14s
 6 actionable tasks: 6 executed
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.4.0/userguide/configuration_cache_enabling.html

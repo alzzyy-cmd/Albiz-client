@@ -1,6 +1,6 @@
 build exit=0
-total 18912
-drwxr-xr-x  2 runner runner     4096 Nov 12 22:46 .
-drwxr-xr-x 11 runner runner     4096 Nov 12 22:46 ..
--rw-r--r--  1 runner runner 19355913 Nov 12 22:46 albiz-1.0.jar
+total 48408
+drwxr-xr-x  2 runner runner     4096 Nov 12 23:12 .
+drwxr-xr-x 11 runner runner     4096 Nov 12 23:12 ..
+-rw-r--r--  1 runner runner 49560708 Nov 12 23:12 albiz-1.0.jar
 test exit=1
