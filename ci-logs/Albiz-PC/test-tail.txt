@@ -62,10 +62,7 @@ SpriteRegressionTest > everyDeclaredFortnitePngProducesFiniteContour() FAILED
 RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
     java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
 
-V1RegressionTest > mobileBudgetEnforced() FAILED
-    org.opentest4j.AssertionFailedError at V1RegressionTest.java:13
-
-252 tests completed, 14 failed
+252 tests completed, 13 failed
 
 > Task :test FAILED
 
@@ -78,5 +75,5 @@ Execution failed for task ':test'.
 * Try:
 > Run with --scan to get full insights from a Build Scan (powered by Develocity).
 
-BUILD FAILED in 22s
+BUILD FAILED in 18s
 4 actionable tasks: 2 executed, 2 up-to-date
