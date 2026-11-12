@@ -136,3 +136,8 @@ src/main/resources/assets/albiz/lang/{en_us,tr_tr}.json
 
 ### Not done
 - ClickGUI redesign, 3D model fixes, HUD editor changes. These need the game running to judge.
+
+## 2026-11-12 (third pass)
+- Added `.github/workflows/build.yml`: builds both projects on GitHub Actions, uploads the JARs
+  as artifacts and writes log summaries to `ci-logs/`.
+- Both projects now build. Fixed `PerformanceModule` so `V1RegressionTest.mobileBudgetEnforced` passes.

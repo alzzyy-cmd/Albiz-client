@@ -164,3 +164,25 @@ in-game check, any FPS measurement.
   failures are the original missing-asset failures.
 - **Localisation audit:** exit 0; 3210 keys per language, identical key sets.
 - **Not done:** ClickGUI redesign, 3D model fixes, HUD editor changes.
+
+## Update 2026-11-12 (third pass) — real build on GitHub Actions
+
+The sandbox still cannot reach the Gradle/Maven/Mojang hosts, so the build was run on GitHub
+Actions instead (`.github/workflows/build.yml`, run 43319470403).
+
+- **Build:** `gradlew build -x test` → exit 0 for both Albiz-PC and Albiz-Mobil.
+  `albiz-1.0.jar` produced (about 12.9 MB each). All new and edited code compiled without
+  errors on the first attempt. The JARs were built without the large binary assets, which are
+  not in the source tree.
+- **Gradle tests:** 252 run. Albiz-PC 239 passed / 13 failed; Albiz-Mobil 238 passed / 14 failed.
+  - First run had one more failure, `V1RegressionTest.mobileBudgetEnforced`, caused by this
+    work (the performance-profile change removed a line that test looks for). Fixed; passes now.
+  - The remaining failures: `BakedHeroesTest` (7), `HeroGeometryTest` (3),
+    `SpriteRegressionTest` (1), `RecoveryTest.suppliedAndroidNativeIsActuallyArm64` (1),
+    `RequestedRevisionTest.audioIsUserAssetAndThrottled` (1) all read model, image, native or
+    audio files that are absent from the source tree. Mobil also fails
+    `RecoveryTest.platformManualOverrideAndGlslSelection`, which is in code this work did not
+    touch. The original source was not built on CI for comparison, so "pre-existing" is an
+    inference from the error types, not a measurement.
+  - `LocalizationTest` now ran and passed.
+- **Still not done:** running the game. Nothing has been seen in game.

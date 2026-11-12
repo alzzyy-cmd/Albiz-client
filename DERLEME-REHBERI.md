@@ -2,9 +2,13 @@
 
 Bu rehber, bu ZIP'teki kaynaktan PC ve Mobil JAR'larının nasıl derleneceğini anlatır.
 Proje **Maven değil, Gradle** kullanır (Fabric Loom). "Maven" yalnızca bağımlılıkların
-indirildiği depoların adıdır. Bu kaynak teslim edilirken **derlenemedi** (teslim ortamında
-internet erişimi yoktu); aşağıdaki adımlar projenin kendi dosyalarından çıkarılmıştır ve ilk
-derlemede derleyici hataları çıkabilir. Hata çıkarsa "Hata çıkarsa" bölümüne bak.
+indirildiği depoların adıdır.
+
+**Durum (2026-11-12):** iki proje de GitHub Actions üzerinde derlendi (`build exit=0`) ve
+`albiz-1.0.jar` üretildi. Depodaki `.github/workflows/build.yml` her push'ta iki projeyi derler,
+JAR'ları "Artifacts" olarak yükler ve özet günlükleri `ci-logs/` klasörüne yazar. Bu JAR'lar
+büyük dosyalar (resim, ses, model) geri yüklenmeden derlendi; tam JAR için 3. bölümdeki
+geri yükleme adımları gerekir.
 
 ## 1. ZIP'in içeriği
 
@@ -109,9 +113,7 @@ ister (`pip install pillow`) ve Gradle derlemesinden sonra çalıştırılır.
 
 ## 6. Hata çıkarsa
 
-Bu teslimde eklenen ve değiştirilen dosyalar Minecraft'a karşı derlenmedi. Yapılan denetim:
-kullanılan her Minecraft sınıf / metot / alan adının ve parametre sayılarının 1.21.11
-eşlemelerinde var olduğu doğrulandı. Tip uyuşmazlıkları bu denetimden kaçmış olabilir.
+Kod şu an hatasız derleniyor. İleride değişiklik yapıp hata alırsan:
 
 1. `bash gradlew compileJava --max-workers=1` çalıştır, hataları oku.
 2. Hata büyük olasılıkla şu dosyalardadır (bu teslimde yazılan ya da değiştirilenler):
