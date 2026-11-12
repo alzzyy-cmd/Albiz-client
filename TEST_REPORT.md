@@ -186,3 +186,18 @@ Actions instead (`.github/workflows/build.yml`, run 43319470403).
     inference from the error types, not a measurement.
   - `LocalizationTest` now ran and passed.
 - **Still not done:** running the game. Nothing has been seen in game.
+
+## Update 2026-11-12 (fourth pass) — JARs with restored assets
+
+Run 43322676413 on GitHub Actions, after restoring binary assets from the older Albiz JAR
+(see `RESTORED-ASSETS.md`).
+
+- **Build:** exit 0 for both. JARs committed by CI to `dist/Albiz-PC.jar` and
+  `dist/Albiz-Mobil.jar` (about 19.4 MB each).
+- **Gradle tests:** 252 run. PC 240 passed / 12 failed; Mobil 239 passed / 13 failed.
+  `RecoveryTest.suppliedAndroidNativeIsActuallyArm64` now passes (native restored). The
+  remaining failures need files that are still missing: character models `guts`/`subaru`
+  (10 tests), the `fortnite_pack` images (1), a sound recording (1). Mobil additionally fails
+  `RecoveryTest.platformManualOverrideAndGlslSelection`, in code this work did not touch.
+- **Not done:** the game was not launched with these JARs. The Mobil JAR is the plain Gradle
+  output; `tools/package_revision.py` (strip desktop natives, shrink images) was not run.

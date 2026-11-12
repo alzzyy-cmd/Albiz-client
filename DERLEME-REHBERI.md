@@ -7,8 +7,9 @@ indirildiği depoların adıdır.
 **Durum (2026-11-12):** iki proje de GitHub Actions üzerinde derlendi (`build exit=0`) ve
 `albiz-1.0.jar` üretildi. Depodaki `.github/workflows/build.yml` her push'ta iki projeyi derler,
 JAR'ları "Artifacts" olarak yükler ve özet günlükleri `ci-logs/` klasörüne yazar. Bu JAR'lar
-büyük dosyalar (resim, ses, model) geri yüklenmeden derlendi; tam JAR için 3. bölümdeki
-geri yükleme adımları gerekir.
+eski bir Albiz JAR'ından kurtarılan dosyalarla (fontlar, bazı resimler, Android kütüphanesi;
+bkz. `RESTORED-ASSETS.md`) derlendi ve `dist/` klasörüne yazıldı. Bazı modeller, sesler ve
+resimler hâlâ eksik; tam JAR için 3. bölümdeki geri yükleme adımları gerekir.
 
 ## 1. ZIP'in içeriği
 
