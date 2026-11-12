@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="17" failures="0" errors="0"><testsuite name="net.albiz.client.RecoveryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-11-05T23:38:59.182Z" hostname="e2b.local" time="1.142">
+  <properties />
+  <testcase name="suppliedAndroidNativeIsActuallyArm64()" classname="net.albiz.client.RecoveryTest" time="0.183" />
+  <testcase name="staleCachedBindingIsCheckedBeforeArrayAccess()" classname="net.albiz.client.RecoveryTest" time="0.729" />
+  <testcase name="atomicWriteReplacesAndKeepsUtf8()" classname="net.albiz.client.RecoveryTest" time="0.018" />
+  <testcase name="migrationCopiesOnceNeverDeletesLegacy()" classname="net.albiz.client.RecoveryTest" time="0.014" />
+  <testcase name="unsupportedKeysAreRejected()" classname="net.albiz.client.RecoveryTest" time="0.003" />
+  <testcase name="corruptBackupPreservesExactBytes()" classname="net.albiz.client.RecoveryTest" time="0.009" />
+  <testcase name="desktopPreLaunchDoesNotOverrideNativePath()" classname="net.albiz.client.RecoveryTest" time="0.109" />
+  <testcase name="existingTargetIsNeverOverwritten()" classname="net.albiz.client.RecoveryTest" time="0.007" />
+  <testcase name="nullPollingInputDoesNotCrash()" classname="net.albiz.client.RecoveryTest" time="0.003" />
+  <testcase name="moduleSetterRejectsInvalidAndSupportsClear()" classname="net.albiz.client.RecoveryTest" time="0.01" />
+  <testcase name="platformManualOverrideAndGlslSelection()" classname="net.albiz.client.RecoveryTest" time="0.0" />
+  <testcase name="officialBuildNeverEnforcesOrStops()" classname="net.albiz.client.RecoveryTest" time="0.003" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.imgui.ImGuiScopeRegressionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-05T23:39:00.336Z" hostname="e2b.local" time="0.158">
+  <properties />
+  <testcase name="recoveryPreservesOuterThemeAndFontScopes()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.129" />
+  <testcase name="normalBalancedCodeDoesNotRequireRecovery()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.002" />
+  <testcase name="thrownSettingRendererUnwindsChildAndWindowBeforeEndFrame()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.003" />
+  <testcase name="unmatchedPopBecomesJavaErrorInsteadOfNativeAssertion()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.009" />
+  <testcase name="wrongEndIsDetectedBeforeNativeAssertion()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.004" />
+  <system-out />
+  <system-err />
+</testsuite></testsuites>

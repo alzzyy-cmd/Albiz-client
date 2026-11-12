@@ -1,0 +1,26 @@
+[
+  {
+    "file": "src/main/resources/assets/albiz/sounds/menu_click.ogg",
+    "sha256": "e913ad83e469460ec278a121953855bf5c29033a34223ba312e9f1ddf788f0e1",
+    "bytes": 3769,
+    "provenance": "Original procedural synthesis; tools/generate_feedback_sounds.py; no third-party samples or voice."
+  },
+  {
+    "file": "src/main/resources/assets/albiz/sounds/module_on.ogg",
+    "sha256": "6ccb377bb785aac8cd1dc25d63cb49d2b6ef97d1b209856f8e3303ce3d013d18",
+    "bytes": 4079,
+    "provenance": "Original procedural synthesis; tools/generate_feedback_sounds.py; no third-party samples or voice."
+  },
+  {
+    "file": "src/main/resources/assets/albiz/sounds/module_off.ogg",
+    "sha256": "8e1eff79c2f16518f33f2eb4c8ba67142b940329aff93b1e71ff6baadfb38e8e",
+    "bytes": 4061,
+    "provenance": "Original procedural synthesis; tools/generate_feedback_sounds.py; no third-party samples or voice."
+  },
+  {
+    "file": "src/main/resources/assets/albiz/sounds/chunk_alert.ogg",
+    "sha256": "0f5422b3eb355ef815a01d1f82aa38fb1f40fcfb83e540cfd554d35f909743d9",
+    "bytes": 5024,
+    "provenance": "Original procedural synthesis; tools/generate_feedback_sounds.py; no third-party samples or voice."
+  }
+]

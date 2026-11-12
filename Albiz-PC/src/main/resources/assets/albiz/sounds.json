@@ -1,0 +1,677 @@
+{
+  "spawner_notify": {
+    "sounds": [
+      "albiz:spawner_notify"
+    ]
+  },
+  "menu_click": {
+    "sounds": [
+      "albiz:menu_click"
+    ]
+  },
+  "module_on": {
+    "sounds": [
+      "albiz:module_on"
+    ]
+  },
+  "module_off": {
+    "sounds": [
+      "albiz:module_off"
+    ]
+  },
+  "chunk_alert": {
+    "sounds": [
+      {
+        "name": "albiz:alerts/chunk_found",
+        "stream": true
+      }
+    ]
+  },
+  "keys.60he_v2.press": {
+    "sounds": [
+      {
+        "name": "albiz:keys/60he_v2/press_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_10",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_11",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/press_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.60he_v2.release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/60he_v2/release_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/release_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.60he_v2.space": {
+    "sounds": [
+      {
+        "name": "albiz:keys/60he_v2/space_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_5",
+        "stream": false
+      }
+    ]
+  },
+  "keys.60he_v2.space_release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/60he_v2/space_release_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_release_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_release_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/60he_v2/space_release_3",
+        "stream": false
+      }
+    ]
+  },
+  "keys.fb67.press": {
+    "sounds": [
+      {
+        "name": "albiz:keys/fb67/press_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_10",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/press_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.fb67.release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/fb67/release_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/release_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.fb67.space": {
+    "sounds": [
+      {
+        "name": "albiz:keys/fb67/space_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/space_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/space_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/space_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/fb67/space_4",
+        "stream": false
+      }
+    ]
+  },
+  "keys.frost65.press": {
+    "sounds": [
+      {
+        "name": "albiz:keys/frost65/press_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_10",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_11",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/press_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.frost65.release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/frost65/release_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/release_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.frost65.space": {
+    "sounds": [
+      {
+        "name": "albiz:keys/frost65/space_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/space_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/space_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/space_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/space_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/frost65/space_5",
+        "stream": false
+      }
+    ]
+  },
+  "keys.frost65.space_release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/frost65/space_release_0",
+        "stream": false
+      }
+    ]
+  },
+  "keys.mouse.click": {
+    "sounds": [
+      {
+        "name": "albiz:keys/mouse/click_0",
+        "stream": false
+      }
+    ]
+  },
+  "keys.aula.press": {
+    "sounds": [
+      {
+        "name": "albiz:keys/press_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_10",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_11",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/press_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.aula.release": {
+    "sounds": [
+      {
+        "name": "albiz:keys/release_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_5",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_6",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_7",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_8",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/release_9",
+        "stream": false
+      }
+    ]
+  },
+  "keys.aula.space": {
+    "sounds": [
+      {
+        "name": "albiz:keys/space_0",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/space_1",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/space_2",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/space_3",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/space_4",
+        "stream": false
+      },
+      {
+        "name": "albiz:keys/space_5",
+        "stream": false
+      }
+    ]
+  },
+  "menu_theme": {
+    "sounds": [
+      {
+        "name": "albiz:menu_theme",
+        "stream": true
+      }
+    ]
+  },
+  "ui.silk_nav": {
+    "sounds": [
+      "albiz:ui/silk_nav"
+    ]
+  },
+  "ui.silk_on": {
+    "sounds": [
+      "albiz:ui/silk_on"
+    ]
+  },
+  "ui.silk_off": {
+    "sounds": [
+      "albiz:ui/silk_off"
+    ]
+  },
+  "ui.silk_type": {
+    "sounds": [
+      "albiz:ui/silk_type"
+    ]
+  },
+  "ui.silk_select": {
+    "sounds": [
+      "albiz:ui/silk_select"
+    ]
+  },
+  "ui.silk_hover": {
+    "sounds": [
+      "albiz:ui/silk_hover"
+    ]
+  },
+  "ui.silk_open": {
+    "sounds": [
+      "albiz:ui/silk_open"
+    ]
+  },
+  "ui.silk_close": {
+    "sounds": [
+      "albiz:ui/silk_close"
+    ]
+  },
+  "ui.glide_open": {
+    "sounds": [
+      "albiz:ui/glide_open"
+    ]
+  },
+  "ui.glide_close": {
+    "sounds": [
+      "albiz:ui/glide_close"
+    ]
+  },
+  "ui.glide_on": {
+    "sounds": [
+      "albiz:ui/glide_on"
+    ]
+  },
+  "ui.glide_off": {
+    "sounds": [
+      "albiz:ui/glide_off"
+    ]
+  },
+  "ui.glide_type": {
+    "sounds": [
+      "albiz:ui/glide_type"
+    ]
+  },
+  "ui.glide_click": {
+    "sounds": [
+      "albiz:ui/glide_click"
+    ]
+  },
+  "ui.glide_check_on": {
+    "sounds": [
+      "albiz:ui/glide_check_on"
+    ]
+  },
+  "ui.glide_check_off": {
+    "sounds": [
+      "albiz:ui/glide_check_off"
+    ]
+  },
+  "ui.glide_hover": {
+    "sounds": [
+      "albiz:ui/glide_hover"
+    ]
+  },
+  "ui.pulse_on": {
+    "sounds": [
+      "albiz:ui/pulse_on"
+    ]
+  },
+  "ui.pulse_off": {
+    "sounds": [
+      "albiz:ui/pulse_off"
+    ]
+  },
+  "ui.pulse_swish": {
+    "sounds": [
+      "albiz:ui/pulse_swish"
+    ]
+  },
+  "ui.pulse_open": {
+    "sounds": [
+      "albiz:ui/pulse_open"
+    ]
+  },
+  "ui.pulse_close": {
+    "sounds": [
+      "albiz:ui/pulse_close"
+    ]
+  },
+  "ui.pulse_check": {
+    "sounds": [
+      "albiz:ui/pulse_check"
+    ]
+  }
+}

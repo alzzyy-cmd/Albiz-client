@@ -1,0 +1,75 @@
+{
+  "method": "Static ZIP metadata and entry-name inspection only. Claims in modified/cracked JAR metadata are not independently verified. No third-party classes, license keys or audio included in Albiz.",
+  "references": [
+    {
+      "filename": "AstraWare-v5-Client-Mod-Fabric-1.21.4.jar",
+      "sha256": "c2f4944cb3f32efa1978e5a092ffb0b41981f0fcd99723e1859391f7bfd32f1e",
+      "size": 6241839,
+      "declared_license_unverified": "LGPL-3.0-only",
+      "claimed_minecraft_dependency_unverified": "1.21.4",
+      "candidate_class_names": [],
+      "audio_asset_names": [
+        "assets/astralux/sounds/astraluxwelcome.ogg",
+        "assets/astralux/sounds/chunkfinder.ogg",
+        "assets/astralux/sounds/enable_off.ogg",
+        "assets/astralux/sounds/enable_on.ogg",
+        "assets/astralux/sounds/hitsound_flesh.ogg",
+        "assets/astralux/sounds/hitsound_moan.ogg",
+        "assets/astralux/sounds/hitsound_uwu.ogg"
+      ],
+      "executed": false,
+      "code_or_audio_copied": false
+    },
+    {
+      "filename": "WATERCLIENTV3-CRACKED-BY-MITTKEE (1) (1).jar",
+      "sha256": "6a39e6cda7cee80e0eabc905a754d5e4d013fba0e912d4e704e2fcee2fc6d5cf",
+      "size": 526524,
+      "declared_license_unverified": "CC0-1.0",
+      "claimed_minecraft_dependency_unverified": "~1.21.11",
+      "candidate_class_names": [
+        "water/client/module/ChunkFinder.class"
+      ],
+      "audio_asset_names": [
+        "assets/water/sounds/module_toggle.ogg"
+      ],
+      "executed": false,
+      "code_or_audio_copied": false
+    },
+    {
+      "filename": "goobaa-client-deobf-built.jar",
+      "sha256": "3df1c0b355dcccde81a1e4794923bf7bac749087ea2d0e2ca63e4d15a9e27077",
+      "size": 14955093,
+      "declared_license_unverified": "All-Rights-Reserved",
+      "claimed_minecraft_dependency_unverified": "~1.21.11",
+      "candidate_class_names": [
+        "dev/gooba/client/BetterTridentModule.class",
+        "dev/gooba/client/BlockEntityDebugModule.class",
+        "dev/gooba/client/ChunkFinderModule$ScanResult.class",
+        "dev/gooba/client/ChunkFinderModule.class",
+        "dev/gooba/client/ChunkFinderV2Module$ScanResult.class",
+        "dev/gooba/client/ChunkFinderV2Module$ScanRunnable.class",
+        "dev/gooba/client/ChunkFinderV2Module.class",
+        "dev/gooba/client/SusChunkFinderModule$GeodeStructure.class",
+        "dev/gooba/client/SusChunkFinderModule$SusRegion.class",
+        "dev/gooba/client/SusChunkFinderModule.class",
+        "dev/gooba/client/SuspiciousESPModule$KelpResult.class",
+        "dev/gooba/client/SuspiciousESPModule.class"
+      ],
+      "audio_asset_names": [
+        "assets/client/sounds/bind_remove.wav",
+        "assets/client/sounds/bind_success.wav",
+        "assets/client/sounds/boolean_value.ogg",
+        "assets/client/sounds/cfgload.wav",
+        "assets/client/sounds/disable_module.ogg",
+        "assets/client/sounds/enable_module.ogg",
+        "assets/client/sounds/expand_module.wav",
+        "assets/client/sounds/gui/gui_bg.ogg",
+        "assets/client/sounds/guiclose.wav",
+        "assets/client/sounds/guiopen.wav",
+        "assets/client/sounds/slider.wav"
+      ],
+      "executed": false,
+      "code_or_audio_copied": false
+    }
+  ]
+}

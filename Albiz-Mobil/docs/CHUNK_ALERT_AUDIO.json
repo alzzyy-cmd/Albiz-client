@@ -1,0 +1,16 @@
+{
+  "source_url": "https://raw.githubusercontent.com/alzzyy-cmd/Anubis/main/dragon-studio-howling-wolves-515977.mp3",
+  "source_sha256": "eb738e458931144a8ec143fccc6f4605250a38db4ccc53e795020cfda0cf4b59",
+  "ogg_sha256": "29564414006d1744fd34bf0776125dd4250f79a230e8e4cd2887cfa55e23bcae",
+  "ogg_bytes": 53472,
+  "conversion": "Full recording; mono Vorbis, 44.1 kHz, quality 4; no trim; no listening/gameplay test performed.",
+  "rights": "User-provided via their GitHub repository; attribution/redistribution terms must be retained or supplied by the user.",
+  "duration_seconds": 7.56,
+  "discovery_cooldown_seconds": 8,
+  "controls": [
+    "Hive Finder: Discovery Sound",
+    "Chunk Scanner: Sound",
+    "Sound Feedback: Chunk Alerts and Volume"
+  ],
+  "status": "Converted full recording; compiled source hooks for both scanners. No audio listening or in-game playback test."
+}

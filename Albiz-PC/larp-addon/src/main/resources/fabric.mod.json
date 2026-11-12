@@ -1,0 +1,6 @@
+{
+ "schemaVersion":1,"id":"albiz_larp","version":"1.0","name":"Larp Addon for Albiz",
+ "description":"Independent bounded passive V5, V6 and Finder/V7 tools for Albiz PC and Mobile. Not the original Meteor LarpDebug binary.",
+ "environment":"client","license":"GPL-3.0-only","entrypoints":{"albiz":["net.albizlarp.LarpAddon"]},
+ "depends":{"albiz":">=1.0","fabricloader":">=0.18.4","minecraft":"1.21.11","java":">=21"}
+}

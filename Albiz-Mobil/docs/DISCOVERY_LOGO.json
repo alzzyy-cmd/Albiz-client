@@ -1,0 +1,6 @@
+{
+  "source": "User-supplied Albiz_icon.png",
+  "source_sha256": "aa1c7cf8926dfe27be8cf5da00b67d3838ae68697f23eb816cc5389507162bb3",
+  "world_segments": 121,
+  "method": "Alpha contours, Douglas-Peucker epsilon1 pixel; includes eyes/ears/central sword detail; bounded line geometry, no per-frame tracing."
+}

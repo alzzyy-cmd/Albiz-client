@@ -1,0 +1,27 @@
+{
+  "java_tests": 119,
+  "java_failures": 0,
+  "python_tests": 8,
+  "python_failures": 0,
+  "protected_sha256_matches": {
+    "src/main/java/net/albiz/client/input/AlbizKeyPolling.java": true,
+    "src/main/java/net/albiz/client/input/KeyCapture.java": true,
+    "src/main/java/net/albiz/client/input/ModuleKeybinds.java": true,
+    "src/main/resources/LICENSE_anubis": true,
+    "src/main/resources/assets/albiz/natives/android-arm64/libimgui-java64.so": true,
+    "LICENSE": true,
+    "NOTICE.md": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeModels.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeMaterial.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeSkin.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/WeaponInspectModule.java": true
+  },
+  "previous_character_assets_unchanged": {
+    "assets/albiz/characters/cj.anc": true,
+    "assets/albiz/characters/guts.anc": true,
+    "assets/albiz/characters/neighbor.anc": true,
+    "assets/albiz/characters/subaru.anc": true
+  },
+  "runtime_verification": "No Minecraft/OpenGL/Android/live-server tests performed.",
+  "github_push": false
+}

@@ -1,0 +1,13 @@
+{
+  "src/main/java/net/albiz/client/input/AlbizKeyPolling.java": "de6bd12fc4e52643a9647cbcf4f42597a6b259a243aaeb69f4e574fe603212a8",
+  "src/main/java/net/albiz/client/input/KeyCapture.java": "3b06f71f163d45cd69df732112f9b62ea0bc0fb2735f6e6349c88813a270ff78",
+  "src/main/java/net/albiz/client/input/ModuleKeybinds.java": "9789260faf9aee6750b7b8849c903a11902815086669684a05c59f629393035c",
+  "src/main/resources/LICENSE_anubis": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+  "src/main/resources/assets/albiz/natives/android-arm64/libimgui-java64.so": "bb6ea1f6087ab0bfd8aafbbbb84a3826c1dfd293f7f535964aad094a0771d73c",
+  "LICENSE": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+  "NOTICE.md": "8d44a96cc237b31fe0f6c4a89899b21350e52ebb0a91eb6c51bba35a1661ace9",
+  "src/main/java/net/albiz/client/module/impl/render/KnifeModels.java": "4986ad3914daa366e029289eb353faec42fe866bd4ed1494dcb0f23318040335",
+  "src/main/java/net/albiz/client/module/impl/render/KnifeMaterial.java": "d05458f140cd52bd54a9998abbd21ad2ac8ee5c7c299398fc6a8d8af825fe10c",
+  "src/main/java/net/albiz/client/module/impl/render/KnifeSkin.java": "49b17560db7dca1b2dd94fc44af4bd09ee08ff855c89881c91de9252d38f328e",
+  "src/main/java/net/albiz/client/module/impl/render/WeaponInspectModule.java": "5c9f62da29b37a1b61a73fa402c2a6aa99fb936063a037a125d39f43f5a24fd0"
+}

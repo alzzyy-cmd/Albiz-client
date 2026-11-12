@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "package": "net.albiz.client.port.soberui.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClickableWidgetAccessor",
+    "LanServerEntryAccessor",
+    "MultiplayerScreenAccessor",
+    "ServerEntryAccessor",
+    "ChatScreenMixin",
+    "ScreenMixin",
+    "PressableWidgetMixin",
+    "SliderWidgetMixin",
+    "EntryListWidgetMixin",
+    "ScrollableWidgetMixin",
+    "TextFieldWidgetMixin",
+    "HeldItemFeatureRendererMixin",
+    "DrawContextMixin",
+    "PickaxeInspectKeyMixin",
+    "PickaxeDeployMixin",
+    "GameRendererAccessor",
+    "GuiRendererAccessor",
+    "GlassGearMixin",
+    "ItemGlassMixin",
+    "GlassPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "reference_repository": "https://github.com/alzzyy-cmd/Anubis",
+  "reference_parts": [
+    "anubis.zip.001",
+    "anubis.zip.002"
+  ],
+  "reference_jar": "Anubis_Client_1_0_mobile_fixed.jar",
+  "reference_jar_sha256": "c611c6e62072d1915ab0d5cbfc3194b4e07197ba1b7d68c701bb949c4ac0c25c",
+  "reference_gui_classes_identical_between_albiz_and_anubis_jars": true,
+  "method": "Static archive/selected CFR inspection; reference JAR not executed",
+  "user_confirmed_layout": true,
+  "restored_primary_renderer": "renderModulePanels",
+  "removed_renderer": "renderLibrary",
+  "java_sources_changed_from_hotfix2": [
+    "src/main/java/net/albiz/client/gui/ClickGuiRenderer.java"
+  ],
+  "resource_files_changed_from_hotfix2": [],
+  "preserved": "All other production Java and resources are byte-identical to Hotfix 2, including HUD, menus, multiplayer and item fixes.",
+  "runtime_visual_parity_tested": false
+}

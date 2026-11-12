@@ -1,0 +1,5 @@
+#!/bin/bash
+# Runs every pure-Java unit test added in this work for the given project dir.
+cd "$1" || exit 1
+J=src/main/java/net/albiz/client; T=src/test/java/net/albiz/client
+/home/user/tools/unit.sh $PWD $J/sound/*.java $J/diagnostics/ChunkReceiptLog.java $J/esp/ChunkWorkQueue.java $J/util/seedscan/DeepslateGradient.java src/main/java/net/albiz/client/suschunk/EvidenceType.java src/main/java/net/albiz/client/suschunk/EvidenceBook.java src/main/java/net/albiz/client/suschunk/BlockEvidenceRules.java src/main/java/net/albiz/client/gui/SettingsTransition.java $J/esp/SkeletonPose.java $J/suschunk/SuspicionVerdict.java $(ls $J/perf/*.java 2>/dev/null) -- $T/sound/*.java $T/diagnostics/ChunkReceiptLogTest.java $T/esp/ChunkWorkQueueTest.java $T/util/seedscan/DeepslateGradientTest.java $T/esp/SkeletonPoseTest.java $T/suschunk/SuspicionVerdictTest.java $(ls $T/perf/*.java 2>/dev/null) src/test/java/net/albiz/client/suschunk/EvidenceBookTest.java src/test/java/net/albiz/client/suschunk/BlockEvidenceRulesTest.java src/test/java/net/albiz/client/gui/SettingsTransitionTest.java

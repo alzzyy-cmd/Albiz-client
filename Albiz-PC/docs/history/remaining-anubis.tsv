@@ -1,0 +1,19 @@
+file	line	classification	text
+src/main/java/net/albiz/client/config/ConfigMigration.java	13	legacy config import/migration	Path legacy = configDir.resolve("anubis");
+src/main/java/net/albiz/client/config/ConfigMigration.java	14	legacy config import/migration	if (!Files.isDirectory(legacy, LinkOption.NOFOLLOW_LINKS)) legacy = configDir.resolve("anubisplus");
+src/main/java/net/albiz/client/config/HudTheme.java	148	legacy config import/migration	if (parsed.isJsonObject() && (parsed.getAsJsonObject().has("albizHudTheme") || parsed.getAsJsonObject().has("anubisHudTheme"))) {
+src/main/java/net/albiz/client/config/HudTheme.java	149	legacy config import/migration	JsonElement values = parsed.getAsJsonObject().get(parsed.getAsJsonObject().has("albizHudTheme") ? "albizHudTheme" : "anubisHudTheme");
+src/main/java/net/albiz/client/config/ThemeStore.java	139	legacy config import/migration	if (parsed.isJsonObject() && (parsed.getAsJsonObject().has("albizTheme") || parsed.getAsJsonObject().has("anubisTheme"))) {
+src/main/java/net/albiz/client/config/ThemeStore.java	140	legacy config import/migration	JsonElement values = parsed.getAsJsonObject().get(parsed.getAsJsonObject().has("albizTheme") ? "albizTheme" : "anubisTheme");
+src/main/java/net/albiz/client/gui/mainmenu/CommunityPopup.java	13	canonical project URL	public static final String INVITE = "github.com/alzzyy-cmd/Anubis";
+src/main/java/net/albiz/client/gui/mainmenu/CommunityPopup.java	14	canonical project URL	public static final String INVITE_URL = "https://github.com/alzzyy-cmd/Anubis";
+src/main/java/net/albiz/client/gui/mainmenu/CommunityPopup.java	285	canonical project URL	DISCORD("ALBIZ PROJECT", "github.com/alzzyy-cmd/Anubis", "https://github.com/alzzyy-cmd/Anubis"),
+src/main/java/net/albiz/client/module/impl/misc/DiscordPresenceModule.java	143	canonical project URL	button.addProperty("url", "https://github.com/alzzyy-cmd/Anubis");
+src/main/java/net/albiz/client/security/PayGuard.java	171	canonical project URL	class_156.method_668().method_670("https://github.com/alzzyy-cmd/Anubis");
+src/main/java/net/albiz/client/util/spotify/LyricsService.java	50	canonical project URL	private static final String HOMEPAGE = "https://github.com/alzzyy-cmd/Anubis";
+src/main/java/net/albiz/client/util/spotify/LyricsService.java	476	canonical project URL	return "Albiz Client/" + version + " (https://github.com/alzzyy-cmd/Anubis)";
+src/main/resources/SECURITY.md	3	upstream legal attribution	Albız, Anubis Client’ın GPL-3.0-only forku; orijinal yazar 4ldenz.
+src/main/resources/fabric.mod.json	11	canonical project URL	"sources": "https://github.com/alzzyy-cmd/Anubis"
+src/main/resources/fabric.mod.json	41	upstream legal attribution	"upstreamProject": "Anubis Client",
+src/test/java/net/albiz/client/RecoveryTest.java	27	upstream legal attribution	Path old = dir.resolve("anubis/profiles"); Files.createDirectories(old);
+src/test/java/net/albiz/client/RecoveryTest.java	37	upstream legal attribution	Files.createDirectories(dir.resolve("anubis")); Files.createDirectories(dir.resolve("albiz"));

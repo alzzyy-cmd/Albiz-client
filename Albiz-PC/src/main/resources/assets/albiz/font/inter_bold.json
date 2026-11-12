@@ -1,0 +1,15 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "albiz:inter-bold.ttf",
+      "size": 9.12,
+      "oversample": 4.0,
+      "shift": [0.0, 1.0]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}

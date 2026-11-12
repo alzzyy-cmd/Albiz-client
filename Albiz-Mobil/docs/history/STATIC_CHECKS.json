@@ -1,0 +1,36 @@
+{
+  "mod_id": "albiz",
+  "version": "1.0.1-redesign+mc1.21.11",
+  "old_namespace_entries": [],
+  "android_native_sha256": "bb6ea1f6087ab0bfd8aafbbbb84a3826c1dfd293f7f535964aad094a0771d73c",
+  "shader_uniform_albiz": true,
+  "shader_uniform_legacy": false,
+  "guarded_scope_class": true,
+  "old_emblem_animation_class": false,
+  "mobile_menu_asset": true,
+  "test_total": 17,
+  "language_key_count": 118,
+  "language_keys_match": true,
+  "asset_dimensions": {
+    "textures/gui/logo.png": [
+      1034,
+      348
+    ],
+    "textures/gui/head.png": [
+      350,
+      350
+    ],
+    "textures/gui/hud_emblem.png": [
+      150,
+      256
+    ],
+    "textures/gui/dusk_backdrop.png": [
+      1920,
+      1080
+    ],
+    "textures/gui/dusk_backdrop_mobile.jpg": [
+      960,
+      540
+    ]
+  }
+}

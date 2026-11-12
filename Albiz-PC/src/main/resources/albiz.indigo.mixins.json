@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "package": "net.albiz.client.mixin.indigo",
+  "plugin": "net.albiz.client.mixin.indigo.AlbizIndigoMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinAbstractTerrainRenderContext"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

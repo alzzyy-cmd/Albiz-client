@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites><testsuite name="net.albiz.client.RecoveryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:13.250Z" hostname="e2b.local" time="0.601">
+  <properties />
+  <testcase name="suppliedAndroidNativeIsActuallyArm64()" classname="net.albiz.client.RecoveryTest" time="0.103" />
+  <testcase name="staleCachedBindingIsCheckedBeforeArrayAccess()" classname="net.albiz.client.RecoveryTest" time="0.383" />
+  <testcase name="atomicWriteReplacesAndKeepsUtf8()" classname="net.albiz.client.RecoveryTest" time="0.008" />
+  <testcase name="migrationCopiesOnceNeverDeletesLegacy()" classname="net.albiz.client.RecoveryTest" time="0.007" />
+  <testcase name="unsupportedKeysAreRejected()" classname="net.albiz.client.RecoveryTest" time="0.003" />
+  <testcase name="corruptBackupPreservesExactBytes()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <testcase name="pickerUsesRealIconsRatherThanMobileInitialsBadges()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <testcase name="desktopPreLaunchDoesNotOverrideNativePath()" classname="net.albiz.client.RecoveryTest" time="0.05" />
+  <testcase name="existingTargetIsNeverOverwritten()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <testcase name="nullPollingInputDoesNotCrash()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <testcase name="moduleSetterRejectsInvalidAndSupportsClear()" classname="net.albiz.client.RecoveryTest" time="0.001" />
+  <testcase name="platformManualOverrideAndGlslSelection()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <testcase name="officialBuildNeverEnforcesOrStops()" classname="net.albiz.client.RecoveryTest" time="0.004" />
+  <testcase name="editorPathsAvoidInternalJniAndGhostTerrainCancellation()" classname="net.albiz.client.RecoveryTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.config.UnicodeMigrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:13.853Z" hostname="e2b.local" time="0.097">
+  <properties />
+  <testcase name="existingNamedMainFileIsNeverOverwritten()" classname="net.albiz.client.config.UnicodeMigrationTest" time="0.002" />
+  <testcase name="newestAsciiFolderTakesPrecedenceOverOlderAnubis()" classname="net.albiz.client.config.UnicodeMigrationTest" time="0.003" />
+  <testcase name="currentAsciiFolderMigratesBindingBytesWithoutChangingThem()" classname="net.albiz.client.config.UnicodeMigrationTest" time="0.003" />
+  <testcase name="preexistingTurkishTargetIsNeverOverwritten()" classname="net.albiz.client.config.UnicodeMigrationTest" time="0.002" />
+  <testcase name="nonUtf8JvmFallsBackToAlbizNeverAnubis()" classname="net.albiz.client.config.UnicodeMigrationTest" time="0.087" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.diagnostics.CompactBlockBatchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:13.951Z" hostname="e2b.local" time="0.021">
+  <properties />
+  <testcase name="outsideSectionIsCountedRatherThanWrappedToAnotherPosition()" classname="net.albiz.client.diagnostics.CompactBlockBatchTest" time="0.007" />
+  <testcase name="finalStateWinsAndAppliedDigestOmitsRepeatedCells()" classname="net.albiz.client.diagnostics.CompactBlockBatchTest" time="0.001" />
+  <testcase name="sparseCoordinatesRoundTripIncludingNegativeSections()" classname="net.albiz.client.diagnostics.CompactBlockBatchTest" time="0.001" />
+  <testcase name="fullSectionIsOneSmallRowInsteadOf4096Rows()" classname="net.albiz.client.diagnostics.CompactBlockBatchTest" time="0.011" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.diagnostics.PacketCaptureWriterTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:13.974Z" hostname="e2b.local" time="0.135">
+  <properties />
+  <testcase name="stoppingDrainsQueueAndProducesReadableGzipFooter()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.029" />
+  <testcase name="invalidLimitsAreRejectedBeforeOpeningFile()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.002" />
+  <testcase name="existingFileIsNotOverwritten()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.002" />
+  <testcase name="schemaDropsUnknownFieldsAndRejectsRawCustomPayload()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.002" />
+  <testcase name="oversizedSingleRowDoesNotStopTheEntireCapture()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.003" />
+  <testcase name="rowLimitStopsInsteadOfGrowingForever()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.002" />
+  <testcase name="byteLimitStopsAndFinishesValidFile()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.011" />
+  <testcase name="concurrentProducersHaveBoundedQueueAndAccountForDroppedRows()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.056" />
+  <testcase name="timerExpiresWithoutAnyGameTick()" classname="net.albiz.client.diagnostics.PacketCaptureWriterTest" time="0.015" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.esp.CuboidSweepTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.112Z" hostname="e2b.local" time="0.014">
+  <properties />
+  <testcase name="pauseResumesWithoutStarvation()" classname="net.albiz.client.esp.CuboidSweepTest" time="0.003" />
+  <testcase name="allCellsExactlyOnceAndWrap()" classname="net.albiz.client.esp.CuboidSweepTest" time="0.006" />
+  <testcase name="rejectsUnboundedRadii()" classname="net.albiz.client.esp.CuboidSweepTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.esp.EvidenceHistoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.127Z" hostname="e2b.local" time="0.019">
+  <properties />
+  <testcase name="boundedHistoryEvictsOldestAndFreshDataCanForgetIt()" classname="net.albiz.client.esp.EvidenceHistoryTest" time="0.007" />
+  <testcase name="historyExpiresWithoutClaimingCurrentExistence()" classname="net.albiz.client.esp.EvidenceHistoryTest" time="0.002" />
+  <testcase name="freshEquivalentTokenIsNotMistakenForRetiredData()" classname="net.albiz.client.esp.EvidenceHistoryTest" time="0.003" />
+  <testcase name="maskedChunkScanDoesNotDeleteReceivedEntityEvidence()" classname="net.albiz.client.esp.EvidenceHistoryTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.esp.ObfuscationEvidenceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.148Z" hostname="e2b.local" time="0.013">
+  <properties />
+  <testcase name="oldReceivedDataCannotResurrectRetiredMarker()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.001" />
+  <testcase name="vanillaProfileKeepsOrdinaryChunkScan()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.001" />
+  <testcase name="receivedBlockEntityEvidenceIsRetained()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.001" />
+  <testcase name="hintsRequireOptInLoadedChunkAndRange()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.0" />
+  <testcase name="randomizedChunkMaterialIsNotVerifiedStorage()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.0" />
+  <testcase name="verifiedDataDoesNotAlsoBecomeUnconfirmedHint()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.001" />
+  <testcase name="invalidDistancesCannotPassHintPolicy()" classname="net.albiz.client.esp.ObfuscationEvidenceTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.esp.StableHintProjectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.163Z" hostname="e2b.local" time="0.01">
+  <properties />
+  <testcase name="unchangedHintDoesNotRestartGeometry()" classname="net.albiz.client.esp.StableHintProjectionTest" time="0.003" />
+  <testcase name="expiresAndRemoves()" classname="net.albiz.client.esp.StableHintProjectionTest" time="0.001" />
+  <testcase name="replacementForgettingAndVisibility()" classname="net.albiz.client.esp.StableHintProjectionTest" time="0.001" />
+  <testcase name="capacityAndWorldReset()" classname="net.albiz.client.esp.StableHintProjectionTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.gui.EditorNavigationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.174Z" hostname="e2b.local" time="0.077">
+  <properties />
+  <testcase name="itemPickerCloseClearsChildren()" classname="net.albiz.client.gui.EditorNavigationTest" time="0.05" />
+  <testcase name="blockColorBackReturnsToPickerAndCloseCascades()" classname="net.albiz.client.gui.EditorNavigationTest" time="0.014" />
+  <testcase name="paletteBackLeavesParentUntilSecondBack()" classname="net.albiz.client.gui.EditorNavigationTest" time="0.007" />
+  <testcase name="screenRemovalDoesNotJustBackOneLayer()" classname="net.albiz.client.gui.EditorNavigationTest" time="0.006" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.gui.FavoriteSelectionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.251Z" hostname="e2b.local" time="0.008">
+  <properties />
+  <testcase name="oldConfigStartsEmpty()" classname="net.albiz.client.gui.FavoriteSelectionTest" time="0.0" />
+  <testcase name="snapshotCannotMutateSelection()" classname="net.albiz.client.gui.FavoriteSelectionTest" time="0.001" />
+  <testcase name="deduplicatesAndValidates()" classname="net.albiz.client.gui.FavoriteSelectionTest" time="0.0" />
+  <testcase name="boundedAndCanRemove()" classname="net.albiz.client.gui.FavoriteSelectionTest" time="0.003" />
+  <testcase name="roundTripPreservesMembershipAndOrder()" classname="net.albiz.client.gui.FavoriteSelectionTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.gui.FeedbackThrottleTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.260Z" hostname="e2b.local" time="0.015">
+  <properties />
+  <testcase name="resetAllowsFreshGesture()" classname="net.albiz.client.gui.FeedbackThrottleTest" time="0.005" />
+  <testcase name="sliderCannotPlayEveryFrame()" classname="net.albiz.client.gui.FeedbackThrottleTest" time="0.001" />
+  <testcase name="oldSoundDefaultsBecomeEnabledOnce()" classname="net.albiz.client.gui.FeedbackThrottleTest" time="0.003" />
+  <testcase name="bridgeDoesNotNeedMinecraft()" classname="net.albiz.client.gui.FeedbackThrottleTest" time="0.002" />
+  <testcase name="laterExplicitMuteIsPreserved()" classname="net.albiz.client.gui.FeedbackThrottleTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.gui.RefreshRegressionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.277Z" hostname="e2b.local" time="0.033">
+  <properties />
+  <testcase name="allGlintPatternsAreBoundedAndNonconstant()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.011" />
+  <testcase name="commonScreensFit()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.003" />
+  <testcase name="hsvWrapAndGray()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.012" />
+  <testcase name="portraitScaleUsesWidth()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.001" />
+  <testcase name="invalidUserScaleIsSafe()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.0" />
+  <testcase name="hsvPrimaryAndSecondarySectors()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.0" />
+  <testcase name="hsvRoundTrips()" classname="net.albiz.client.gui.RefreshRegressionTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.i18n.LocalizationTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.312Z" hostname="e2b.local" time="0.116">
+  <properties />
+  <testcase name="userValuesCommandsAndTechnicalIdsRemainUnchanged()" classname="net.albiz.client.i18n.LocalizationTest" time="0.004" />
+  <testcase name="moduleNamesStayEnglishWhileDescriptionsStayTurkish()" classname="net.albiz.client.i18n.LocalizationTest" time="0.004" />
+  <testcase name="englishModeReturnsEnglish()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="backgroundNoticeUsesTemplateWithoutTranslatingFilename()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="moduleHoverAndFooterTranslateSeparately()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="restoredMenuAndNewItemLabelsAreTurkish()" classname="net.albiz.client.i18n.LocalizationTest" time="0.0" />
+  <testcase name="turkishSearchWorksWithAsciiAndDottedCapitalI()" classname="net.albiz.client.i18n.LocalizationTest" time="0.004" />
+  <testcase name="settingsAndModesUseTranslatedPresentation()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="ordinaryWidgetLabelsAlsoRetainIdentityAcrossLocales()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="dynamicProfileNoticeUsesExternalFragment()" classname="net.albiz.client.i18n.LocalizationTest" time="0.002" />
+  <testcase name="numberedPriceLabelTranslatesBothFragments()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="all152ModuleDescriptionsAreTranslated()" classname="net.albiz.client.i18n.LocalizationTest" time="0.003" />
+  <testcase name="everyCatalogKeyHasTurkishEntry()" classname="net.albiz.client.i18n.LocalizationTest" time="0.003" />
+  <testcase name="localeChangesRetainExplicitWidgetIdentity()" classname="net.albiz.client.i18n.LocalizationTest" time="0.001" />
+  <testcase name="uppercaseMenuTextUsesTurkishCapitalization()" classname="net.albiz.client.i18n.LocalizationTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.imgui.ImGuiScopeRegressionTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.432Z" hostname="e2b.local" time="0.128">
+  <properties />
+  <testcase name="translatingInputHintDoesNotTranslateTypedBuffer()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.064" />
+  <testcase name="recoveryPreservesOuterThemeAndFontScopes()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.002" />
+  <testcase name="newTurkicIconsProduceNativeDrawGeometry()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.007" />
+  <testcase name="normalBalancedCodeDoesNotRequireRecovery()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.001" />
+  <testcase name="thrownSettingRendererUnwindsChildAndWindowBeforeEndFrame()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.001" />
+  <testcase name="itemEspPaletteWith1505EntriesOnlySubmitsVisibleRows()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.008" />
+  <testcase name="unmatchedPopBecomesJavaErrorInsteadOfNativeAssertion()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.001" />
+  <testcase name="portableRgbaControlsSanitizeValuesAndBalanceIds()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.007" />
+  <testcase name="paletteLongNamesKeepSeparateIconRowsAndOnlyRenderVisibleIcons()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.005" />
+  <testcase name="wrongEndIsDetectedBeforeNativeAssertion()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.004" />
+  <testcase name="spacedMenuTextMeasuresTranslatedWholeWordBeforeSplittingGlyphs()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.006" />
+  <testcase name="itemPaletteCanFilterAndReopenWithoutLeakedNativeScopes()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.01" />
+  <testcase name="nativeWidgetIdsStayStableAcrossLocales()" classname="net.albiz.client.imgui.ImGuiScopeRegressionTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.module.impl.misc.TridentTuningTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.565Z" hostname="e2b.local" time="0.008">
+  <properties />
+  <testcase name="malformedValuesAreFiniteAndBounded()" classname="net.albiz.client.module.impl.misc.TridentTuningTest" time="0.005" />
+  <testcase name="defaultsPreserveExistingBoost()" classname="net.albiz.client.module.impl.misc.TridentTuningTest" time="0.0" />
+  <testcase name="concurrentBoostsAreNotMultiplied()" classname="net.albiz.client.module.impl.misc.TridentTuningTest" time="0.0" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.module.impl.render.BakedHeroesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:14.574Z" hostname="e2b.local" time="2.159">
+  <properties />
+  <testcase name="bothCharactersHaveArticulatedLimbs()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.283" />
+  <testcase name="catalogUsesBakedModelsAndRetainsSavedIds()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.029" />
+  <testcase name="subaruIsDetailedTexturedMesh()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.064" />
+  <testcase name="newReferenceCharactersHaveFiniteBoundedLods()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.156" />
+  <testcase name="allThreeDetailLevelsLoadWithMonotonicBudgets()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.537" />
+  <testcase name="allLodsHaveFinitePositionsAndValidTextureCoordinates()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.52" />
+  <testcase name="normalsAreUnitLengthAtEveryLod()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.455" />
+  <testcase name="gutsIsDetailedTexturedMesh()" classname="net.albiz.client.module.impl.render.BakedHeroesTest" time="0.104" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.module.impl.render.HeroGeometryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:16.734Z" hostname="e2b.local" time="0.555">
+  <properties />
+  <testcase name="bothHeroesAlsoBuildAtDefaultMediumDetail()" classname="net.albiz.client.module.impl.render.HeroGeometryTest" time="0.127" />
+  <testcase name="subaruBuildsActualBoundedMesh()" classname="net.albiz.client.module.impl.render.HeroGeometryTest" time="0.029" />
+  <testcase name="existingKnifeModelsStillBuild()" classname="net.albiz.client.module.impl.render.HeroGeometryTest" time="0.285" />
+  <testcase name="gutsSwordHasWideLongBladeAndStableInspect()" classname="net.albiz.client.module.impl.render.HeroGeometryTest" time="0.003" />
+  <testcase name="gutsBuildsActualBoundedMesh()" classname="net.albiz.client.module.impl.render.HeroGeometryTest" time="0.102" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.module.setting.ModeAliasTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.292Z" hostname="e2b.local" time="0.005">
+  <properties />
+  <testcase name="changingPresentationDoesNotChangeModeValueOrId()" classname="net.albiz.client.module.setting.ModeAliasTest" time="0.003" />
+  <testcase name="unrelatedDoubleTapModeIsNotRenamed()" classname="net.albiz.client.module.setting.ModeAliasTest" time="0.001" />
+  <testcase name="oldHorusAliasesReadButOnlyAlzzyyIsWritten()" classname="net.albiz.client.module.setting.ModeAliasTest" time="0.0" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.port.soberui.ItemVisualsPureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.298Z" hostname="e2b.local" time="0.076">
+  <properties />
+  <testcase name="objTriangleLoads()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.008" />
+  <testcase name="unsupportedModelFailsWithoutTryingToRender()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.002" />
+  <testcase name="binaryStlTriangleLoads()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.001" />
+  <testcase name="importedModelPathCannotEscape()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.001" />
+  <testcase name="nonFiniteCoordinatesAreRejected()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.0" />
+  <testcase name="everyBuiltinMeshIsFiniteAndBounded()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.06" />
+  <testcase name="malformedMeshDoesNotProduceNanModel()" classname="net.albiz.client.port.soberui.ItemVisualsPureTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.port.soberui.NativeUiPureTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.375Z" hostname="e2b.local" time="0.041">
+  <properties />
+  <testcase name="boolViewDisplayReadsCanonicalValue()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.0" />
+  <testcase name="localJsonIsNotMistakenForRemoteShortCode()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.002" />
+  <testcase name="integerSliderClampsAndResets()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.001" />
+  <testcase name="remoteSharingIsExplicitlyDisabled()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.001" />
+  <testcase name="colorPackedRoundTripPreservesAlpha()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.0" />
+  <testcase name="soundCallbacksAreNoOpBeforeUiInitialization()" classname="net.albiz.client.port.soberui.NativeUiPureTest" time="0.034" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.port.soberui.ResourceLocaleRegressionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.417Z" hostname="e2b.local" time="0.002">
+  <properties />
+  <testcase name="resourceIdsRemainAsciiInTurkish()" classname="net.albiz.client.port.soberui.ResourceLocaleRegressionTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.port.soberui.model.SpriteRegressionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.420Z" hostname="e2b.local" time="0.512">
+  <properties />
+  <testcase name="invalidOrHugePngIsRejectedBeforeNativeDecode()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.002" />
+  <testcase name="everyDeclaredFortnitePngProducesFiniteContour()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.496" />
+  <testcase name="longContourGrowsBuffersSafely()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.003" />
+  <testcase name="branchingEndpointDoesNotDropSegments()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.003" />
+  <testcase name="closedContourStitchesEverySegment()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.001" />
+  <testcase name="disconnectedContoursStaySeparate()" classname="net.albiz.client.port.soberui.model.SpriteRegressionTest" time="0.001" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.release.RequestedRevisionTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.934Z" hostname="e2b.local" time="0.047">
+  <properties />
+  <testcase name="persistsTurkishAndEnglish()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.005" />
+  <testcase name="renderingBudgetSharedAcrossModules()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.001" />
+  <testcase name="strictBelowZero()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.002" />
+  <testcase name="mobileUsesProfileEvenOnDesktopJvm()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.002" />
+  <testcase name="chatIsNoLongerIntercepted()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.001" />
+  <testcase name="invalidDoesNotOverwrite()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.003" />
+  <testcase name="suppliedLogoGeometryIsBounded()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.001" />
+  <testcase name="firstRunMissing()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.002" />
+  <testcase name="kelpBothFormsOnly()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.001" />
+  <testcase name="soundClassificationNotAmbientProof()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.002" />
+  <testcase name="crafterWorkNotIdle()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.002" />
+  <testcase name="languageGatePrecedesCustomMenus()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.003" />
+  <testcase name="audioIsUserAssetAndThrottled()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.003" />
+  <testcase name="noTemporaryFileLeft()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.004" />
+  <testcase name="corruptChoiceReopensGate()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.001" />
+  <testcase name="abyzRegisteredAndSeparate()" classname="net.albiz.client.release.RequestedRevisionTest" time="0.006" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.release.V1RegressionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.981Z" hostname="e2b.local" time="0.014">
+  <properties />
+  <testcase name="wolfIsRealGeometry()" classname="net.albiz.client.release.V1RegressionTest" time="0.0" />
+  <testcase name="mobileBudgetEnforced()" classname="net.albiz.client.release.V1RegressionTest" time="0.008" />
+  <testcase name="englishDefaultAndMigration()" classname="net.albiz.client.release.V1RegressionTest" time="0.001" />
+  <testcase name="editorUsesSelectionAndPersistentPosition()" classname="net.albiz.client.release.V1RegressionTest" time="0.0" />
+  <testcase name="scannerReallyRegistered()" classname="net.albiz.client.release.V1RegressionTest" time="0.0" />
+  <testcase name="glassInstalledBeforeConfig()" classname="net.albiz.client.release.V1RegressionTest" time="0.002" />
+  <system-out />
+  <system-err />
+</testsuite><testsuite name="net.albiz.client.util.WorldIdentityGuardTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-09T18:30:17.996Z" hostname="e2b.local" time="0.004">
+  <properties />
+  <testcase name="disconnectAndReconnectInvalidate()" classname="net.albiz.client.util.WorldIdentityGuardTest" time="0.002" />
+  <testcase name="sameDimensionDifferentWorldStillInvalidates()" classname="net.albiz.client.util.WorldIdentityGuardTest" time="0.0" />
+  <system-out />
+  <system-err />
+</testsuite></testsuites>

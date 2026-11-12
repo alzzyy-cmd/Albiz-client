@@ -1,0 +1,138 @@
+# CHANGELOG
+
+All changes are in both `Albiz-PC/` and `Albiz-Mobil/`. Paths are under
+`src/main/java/net/albiz/client/` unless they start with `src/` or `tools/`.
+
+## New modules
+
+| Module (id) | Category | What it does |
+|---|---|---|
+| Sound Debug (`sound-debug`) | Base Raid | Listens to every sound, entity-sound, world-event, block-action and entity-spawn packet on the network thread, classifies it (kelp, plants, bone meal, pistons, redstone, containers, doors, workstations, spawners, block break/place, player actions, hostile and passive mobs, and more), keeps only underground events if asked, and groups them into per-chunk hotspots with a score and confidence. Markers, boxes, beams, tracers, chat log, alert sound, summary, packet diagnostics with RECEIVED / DECODED / AVAILABLE / INCOMPLETE / NOT_RECEIVED / UNKNOWN per packet type, TSV export. |
+| Chunk Diagnostics (`chunk-diagnostics`) | Base Raid | Records which chunk-data, section-update and block-update packets arrived. On demand prints, for your chunk or the area: packet status, the world's real build range, sections that contain blocks, how many sections below Y 0 contain blocks, and received kelp with its Y range. |
+| SusChunk (`sus-chunk`) | Base Raid | Evidence-scored chunk finder. See below. |
+| Bedrock Void ESP (`bedrock-void-esp`) | Base Raid | Holes in the bedrock floor at the dimension's real bottom Y; optional Nether roof. |
+| Seed Chunk Finder (`seed-chunk-finder`) | Base Raid | With the server seed, flags chunks whose deepslate at Y 1–7 does not match vanilla generation. |
+| Auto Respawn (`auto-respawn`) | Misc | Respawns after a configurable delay; optional death coordinates in chat. |
+
+### SusChunk in detail
+
+- Evidence types: fully grown kelp, fully grown vines, amethyst clusters, rotated deepslate,
+  deepslate above its natural range, storage blocks, spawners, redstone machinery, farm blocks,
+  live block changes, player/machine sounds (fed by Sound Debug when both are on).
+- Each type has its own weight setting and a cap, so one large kelp forest cannot dominate.
+- Confidence needs independent evidence: a single type can never reach HIGH.
+- Rescans replace a chunk's counts instead of adding to them. Unloaded chunks keep their last
+  result rather than being treated as clean.
+- Alerts fire once per chunk, with a cooldown. "Explain Nearest Chunk" prints every contribution
+  with its natural alternative explanation. Export writes a TSV to `<config>/diagnostics/`.
+- The Sober radar and Tunnel Miner now read its flagged chunks.
+
+## Modules that existed but could not be enabled
+
+- **Fake Stats** and **Anti Vanish** are now registered. Their code is unchanged.
+
+## Fixes
+
+- **Motion Scanner**: container, sound and entity-spawn signals never fired (wrong packet event).
+  Now they do. Added: world events, scan radius, notification when a chunk crosses the
+  threshold, suppression of duplicate packets for the same block.
+- **Abyz Debug**: crafter-sound path had the same dead listener. Added "Underground Y Ceiling"
+  (default 0, same behaviour as before).
+- **Sober UI listener**: damage, sound and time packets were never delivered. Fixed.
+- **Suspicious ESP**: kelp chunks are outlined at the kelp's real Y range instead of a plane at
+  Y 63, and get a tracer when tracers are on.
+
+## GUI
+
+- **Settings transition** (`gui/SettingsTransition`, `gui/ClickGuiRenderer`): opening a module's
+  settings slides the module browser left until a quarter of it remains as a reference, and the
+  settings panel takes the remaining three quarters, dropping in from above. Closing reverses it,
+  and an interrupted transition reverses from where it is. Progress is computed from elapsed
+  time. While shifted, the browser takes no input; clicking it closes the settings.
+- **Theme Studio → Interface → Settings Panel Animation**: preset Smooth / Fast / Soft / Custom /
+  Off; Custom exposes duration, easing (5 curves), distance, start opacity, start scale and
+  direction (top / bottom / left / right). Stored with the theme, so it is saved, exported and
+  reset with it. "Off", or animation speed 0, gives the previous centred card.
+
+## Translations
+
+- 307 keys added to each language file (2,886 → 3,193): every new module, setting, mode, chat
+  message, evidence label and caveat, plus 3 module descriptions and 64 setting strings that the
+  original source was missing.
+- `tools/audit_localization.py` passes; it failed on the original source.
+- Known gap: sound/world-event detail lines built from a block name (for example
+  "Block action: barrel") and the status words RECEIVED/DECODED/… stay in English.
+
+## Other
+
+- `util/UndergroundRules`: `underground(y, ceiling)` overload; the one-argument form is unchanged.
+- `THIRD_PARTY_PORTS.md`: provenance of the Sober-derived files.
+- `src/test/.../i18n/LocalizationTest.java`: expected counts updated to 161 descriptions and
+  152 names.
+- `docs/LOCALIZATION_AUDIT.json`, `docs/TEXT_FILE_INVENTORY.tsv`: regenerated by the audit tool.
+
+## New files
+
+```
+diagnostics/ChunkReceiptLog.java
+esp/ChunkWorkQueue.java
+gui/SettingsTransition.java
+module/impl/misc/AutoRespawnModule.java
+module/impl/render/{BedrockVoidEsp,ChunkDiagnostics,SeedChunkFinder,SoundDebug,SusChunk}Module.java
+sound/{PacketDiagnostics,SoundClassifier,SoundEvidenceLog,SoundKind,Underground,WorldSignalRules}.java
+suschunk/{BlockEvidenceRules,EvidenceBook,EvidenceType}.java
+util/seedscan/DeepslateGradient.java
+src/test/java/net/albiz/client/{diagnostics,esp,gui,sound,suschunk,util/seedscan}/…Test.java   (11 test classes)
+```
+
+## Edited files
+
+```
+config/ThemeStore.java
+easyplace/builder/TunnelMinerModule.java
+gui/ClickGuiRenderer.java
+module/BuiltinModuleProvider.java
+module/impl/render/{AbyzDebug,MotionScanner}Module.java
+port/sober/modules/SuspiciousESP.java
+port/soberui/SoberUi.java
+port/soberui/modules/SusChunk.java
+util/UndergroundRules.java
+src/main/resources/assets/albiz/lang/{en_us,tr_tr}.json
+```
+
+
+## 2026-11-12
+
+### Added
+- **Skeleton ESP** (`skeleton-esp`, Render): stick skeleton on players. Settings: range, max
+  players (16 on mobile, 48 on PC), line width, through walls, self in third person, invisible
+  players, friend highlight, three colours.
+- **Performance Profile** setting on the Performance module: Quality, Balanced, Performance,
+  Custom (default). Custom keeps the existing Scan Budget slider.
+- `verification/add_lang.py` for adding English/Turkish strings.
+
+### Changed
+- **Netherite Finder** (with Advanced Finder) is registered again; its source is unchanged.
+- SusChunk, Bedrock Void ESP and Seed Chunk Finder take their per-tick chunk count through the
+  selected performance profile.
+- Language files: 3193 → 3202 keys in each of English and Turkish.
+
+### Corrected
+- Finding D10 (missing `ChatScreenMixin`) was wrong and is retracted.
+
+## 2026-11-12 (second pass)
+
+### Added
+- **Suspicious ESP → Chunk Verdict**: optional outline per chunk, coloured by a four-state
+  verdict (Clear, Weak, Suspicious, Strong). One kind of block alone never gives Strong.
+  Settings: Chunk Verdict (off by default), Only Strong Verdicts, two colours.
+- `DERLEME-REHBERI.md`: build guide in Turkish, including the PC/Mobil differences.
+
+### Changed
+- **Storage ESP** is registered again. `tools/test_refresh_assets.py` was changed to match.
+- `ClickGuiRenderer`: 60 bare colour numbers replaced by named `GuiPalette` constants with
+  identical values. No visual change intended.
+- Language files: 3202 → 3210 keys.
+
+### Not done
+- ClickGUI redesign, 3D model fixes, HUD editor changes. These need the game running to judge.

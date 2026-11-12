@@ -1,0 +1,115 @@
+{
+  "private_input_sha256": "8b882f0dc83213be35bd7ee32ce84b26138cbe867fba4cd9203c549a0bc17d0e",
+  "coordinates_exported": false,
+  "scope": "Aggregated findings only. Duplicate received/applied rows are not independent locations. No packet trace proves the server plugin name/version or live bypass success.",
+  "captures": [
+    {
+      "capture_index": 1,
+      "duration_requested_ms": 600000,
+      "actual_elapsed_ms": 80099,
+      "reason": "row_limit",
+      "written_rows": 200000,
+      "dropped_queue": 124286,
+      "discarded_limit": 155,
+      "event_counts": {
+        "header": 1,
+        "session_context": 16,
+        "client_sample": 78,
+        "block_update": 196410,
+        "section_update_summary": 1281,
+        "chunk_data": 998,
+        "chunk_entity_summary": 992,
+        "light_update": 164,
+        "block_entity": 61,
+        "summary": 1
+      },
+      "block_entity_counts": [
+        {
+          "type": "minecraft:chest",
+          "phase": "applied",
+          "rows": 29
+        },
+        {
+          "type": "minecraft:chest",
+          "phase": "received_hook",
+          "rows": 29
+        },
+        {
+          "type": "minecraft:furnace",
+          "phase": "applied",
+          "rows": 1
+        },
+        {
+          "type": "minecraft:furnace",
+          "phase": "received_hook",
+          "rows": 1
+        },
+        {
+          "type": "minecraft:mob_spawner",
+          "phase": "received_hook",
+          "rows": 1
+        }
+      ],
+      "unique_received_or_applied_block_entity_positions": 9,
+      "module_state_changes": [
+        {
+          "xray": false,
+          "storage-esp": false,
+          "block-entity-debug": false,
+          "amethyst-bypass": true,
+          "player-bypass": false
+        },
+        {
+          "xray": false,
+          "storage-esp": false,
+          "block-entity-debug": true,
+          "amethyst-bypass": true,
+          "player-bypass": false
+        }
+      ]
+    },
+    {
+      "capture_index": 2,
+      "duration_requested_ms": 300000,
+      "actual_elapsed_ms": 32980,
+      "reason": "row_limit",
+      "written_rows": 200000,
+      "dropped_queue": 254942,
+      "discarded_limit": 513,
+      "event_counts": {
+        "header": 1,
+        "session_context": 7,
+        "client_sample": 32,
+        "block_update": 197614,
+        "section_update_summary": 1220,
+        "chunk_data": 402,
+        "chunk_entity_summary": 395,
+        "block_entity": 12,
+        "light_update": 318,
+        "summary": 1
+      },
+      "block_entity_counts": [
+        {
+          "type": "minecraft:chest",
+          "phase": "applied",
+          "rows": 6
+        },
+        {
+          "type": "minecraft:chest",
+          "phase": "received_hook",
+          "rows": 6
+        }
+      ],
+      "unique_received_or_applied_block_entity_positions": 5,
+      "module_state_changes": [
+        {
+          "xray": false,
+          "storage-esp": false,
+          "block-entity-debug": false,
+          "amethyst-bypass": true,
+          "player-bypass": false
+        }
+      ]
+    }
+  ]
+}

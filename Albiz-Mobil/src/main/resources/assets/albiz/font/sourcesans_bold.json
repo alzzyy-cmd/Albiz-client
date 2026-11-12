@@ -1,0 +1,15 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "albiz:sourcesans-bold.ttf",
+      "size": 10.07,
+      "oversample": 4.0,
+      "shift": [0.0, 1.0]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}

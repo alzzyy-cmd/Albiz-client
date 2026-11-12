@@ -1,0 +1,62 @@
+{
+  "revision": "anubis-original-panels",
+  "java": {
+    "tests": 140,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python_tests": 28,
+  "protected_sha256_unchanged": 11,
+  "registered_mixin_class_entries_verified": 163,
+  "fortnite_pack_images_verified": 24,
+  "jar_sha256": "d0343e762d8fb95195ecc0d9d88d7c79d90cb54c2367cb9d2e0065ffceece92c",
+  "jar_bytes": 50675162,
+  "jar_crc": "pass",
+  "anubis_gui_restore": {
+    "reference_repository": "https://github.com/alzzyy-cmd/Anubis",
+    "reference_parts": [
+      "anubis.zip.001",
+      "anubis.zip.002"
+    ],
+    "reference_jar": "Anubis_Client_1_0_mobile_fixed.jar",
+    "reference_jar_sha256": "c611c6e62072d1915ab0d5cbfc3194b4e07197ba1b7d68c701bb949c4ac0c25c",
+    "reference_gui_classes_identical_between_albiz_and_anubis_jars": true,
+    "method": "Static archive/selected CFR inspection; reference JAR not executed",
+    "user_confirmed_layout": true,
+    "restored_primary_renderer": "renderModulePanels",
+    "removed_renderer": "renderLibrary",
+    "java_sources_changed_from_hotfix2": [
+      "src/main/java/net/albiz/client/gui/ClickGuiRenderer.java"
+    ],
+    "resource_files_changed_from_hotfix2": [],
+    "preserved": "All other production Java and resources are byte-identical to Hotfix 2, including HUD, menus, multiplayer and item fixes.",
+    "runtime_visual_parity_tested": false
+  },
+  "scope": "Original independent Anubis category panels, not the later library GUI; retained native menus/HUD; Dusk; larger logo; Turkish presentation; thumbnail totems/pickaxes/custom models. Appearance only.",
+  "reported_errors": {
+    "watery_locale_id": "Locale.ROOT helper; Turkish-locale CPU regression passes",
+    "sprite_decompilation_stub": "replaced; 24 declared PNG contours exercised by production CPU builder",
+    "multiplayer_crash": "custom initialization/state cleanup guards added; full reported crash trace unavailable, runtime reproduction still required"
+  },
+  "not_tested": [
+    "Minecraft launch",
+    "OpenGL/Vulkan rendering",
+    "Android/Zalith",
+    "network/server flows",
+    "FPS",
+    "visual/screenshot parity",
+    "resource reload in a running game"
+  ],
+  "limits": {
+    "mesh_cache": 64,
+    "sprite_cache": 64,
+    "thumbnail_cache": 64,
+    "pending_sprites": 32,
+    "executor_queue": 32,
+    "model_triangles": 60000,
+    "file_MiB": 16,
+    "PNG_dimension": 2048,
+    "sprite_texture_dimension": 256
+  }
+}

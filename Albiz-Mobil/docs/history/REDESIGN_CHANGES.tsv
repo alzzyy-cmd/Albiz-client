@@ -1,0 +1,53 @@
+file	reason
+NOTICE.md	Artwork, metadata, verification evidence or documentation
+README.md	Artwork, metadata, verification evidence or documentation
+artwork/README.md	Artwork, metadata, verification evidence or documentation
+artwork/albiz-altai-background.png	Artwork, metadata, verification evidence or documentation
+build.gradle	Artwork, metadata, verification evidence or documentation
+docs/STATIC_CHECKS.json	Artwork, metadata, verification evidence or documentation
+docs/STATUS.md	Artwork, metadata, verification evidence or documentation
+docs/TEST_RESULTS.xml	Artwork, metadata, verification evidence or documentation
+docs/remaining-anubis.tsv	Artwork, metadata, verification evidence or documentation
+src/main/java/net/albiz/client/config/HudTheme.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/config/ThemeStore.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/gui/AlbizTitleScreen.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/AlbizWidgets.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/BlockListEditor.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/BrandPalette.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/ClickGuiRenderer.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/GoliathPickerScreen.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/GuiPalette.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/HudRenderer.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/ItemPickerEditor.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/LoadingScreens.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/MainMenuRenderer.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/ProfileList.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/StaffGhost.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/SteppeDraw.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/SurfaceBackground.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/ToggleToasts.java	Use tracked ImGui facade; see binary-safe diff for substantive edits
+src/main/java/net/albiz/client/gui/mainmenu/CommunityPopup.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/mainmenu/CreditsPopup.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/mainmenu/DuskMenu.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/mainmenu/DuskScene.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/mainmenu/DuskWidgets.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/gui/mainmenu/MenuAction.java	Redesign primary menu, shared menu palette or linear loading
+src/main/java/net/albiz/client/imgui/GuardedImGui.java	Tracked native scopes and early failure logging / per-layer isolation
+src/main/java/net/albiz/client/imgui/ImGuiManager.java	Tracked native scopes and early failure logging / per-layer isolation
+src/main/java/net/albiz/client/input/KeyCapture.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/mixin/MixinMinecraft.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/module/impl/misc/DiscordPresenceModule.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/module/impl/misc/noinvleak/StreamOverlay.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/module/impl/render/CustomCrosshairModule.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/module/impl/render/LowHealthWarningModule.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/module/impl/render/WolfCrestModule.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/java/net/albiz/client/security/PayGuard.java	Input / theme migration / rebrand / external identity correction; inspect diff
+src/main/resources/SECURITY.md	Artwork, metadata, verification evidence or documentation
+src/main/resources/assets/albiz/lang/en_us.json	Menu labels and status translations; not full localization
+src/main/resources/assets/albiz/lang/tr_tr.json	Menu labels and status translations; not full localization
+src/main/resources/assets/albiz/shaders/core/sky_theme.fsh	Uniform block name matches Java pipeline
+src/main/resources/assets/albiz/textures/gui/dusk_backdrop.png	Artwork, metadata, verification evidence or documentation
+src/main/resources/assets/albiz/textures/gui/dusk_backdrop_mobile.jpg	Artwork, metadata, verification evidence or documentation
+src/main/resources/assets/albiz/textures/gui/menu/bg_sky.jpg	Artwork, metadata, verification evidence or documentation
+src/main/resources/fabric.mod.json	Artwork, metadata, verification evidence or documentation
+src/test/java/net/albiz/client/imgui/ImGuiScopeRegressionTest.java	Use tracked ImGui facade; see binary-safe diff for substantive edits

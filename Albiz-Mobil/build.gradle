@@ -1,0 +1,56 @@
+plugins {
+    id 'fabric-loom' version '1.16.3'
+    id 'maven-publish'
+}
+group = 'net.albiz'
+version = '1.0'
+base { archivesName = 'albiz' }
+repositories { mavenCentral(); maven { url = 'https://maven.fabricmc.net/' } }
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.11'
+    mappings 'net.fabricmc:intermediary:1.21.11:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.18.4'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.140.0+1.21.11'
+    modCompileOnly fileTree(dir: 'libs', include: ['litematica*.jar', 'malilib*.jar'])
+    implementation 'io.github.spair:imgui-java-binding:1.90.0'
+    implementation 'io.github.spair:imgui-java-lwjgl3:1.90.0'
+    runtimeOnly 'io.github.spair:imgui-java-natives-linux:1.90.0'
+    runtimeOnly 'io.github.spair:imgui-java-natives-windows:1.90.0'
+    runtimeOnly 'io.github.spair:imgui-java-natives-macos:1.90.0'
+}
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
+
+tasks.withType(JavaCompile).configureEach { options.compilerArgs += ["-Xmaxerrs", "2000"] }
+
+// Use module coordinates so Loom can generate nested-JAR identities.
+['binding', 'lwjgl3', 'natives-linux', 'natives-windows', 'natives-macos'].each { part ->
+    dependencies {
+        include("io.github.spair:imgui-java-${part}:1.90.0")
+    }
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+}
+test { useJUnitPlatform(); maxHeapSize = '256m'; maxParallelForks = 1 }
+jar { from('LICENSE') { rename { 'LICENSE' } }; from('NOTICE.md', 'THIRD_PARTY_PORTS.md', 'THIRD_PARTY_CHARACTERS.md') }
+
+// Offline, opt-in character authoring; not run during normal builds.
+tasks.register('bakeCharacters', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'net.albiz.client.module.impl.render.character.gltf.CharacterAssetBaker'
+    args((findProperty('characters') ?: 'guts,subaru').split(','))
+    maxHeapSize = '512m'
+}
+
+// The standalone addon is compiled against this exact intermediary ABI, not Meteor.
+tasks.register('addonClasspath') { dependsOn classes; doLast { file('logs').mkdirs(); file('logs/addon-classpath.txt').text = sourceSets.main.compileClasspath.asPath + File.pathSeparator + sourceSets.main.output.classesDirs.asPath } }
+
+// Assets are supplied in the client JAR; do not duplicate large images in the remapped Java source JAR.
+tasks.named('sourcesJar') { exclude 'assets/**'; exclude 'data/**' }
+
+// Java sources are already intermediary-named and distributed verbatim in the source overlay.
+// Avoid redundant source namespace remapping (high heap cost, no namespace change).
+tasks.named('remapSourcesJar') { enabled = false }

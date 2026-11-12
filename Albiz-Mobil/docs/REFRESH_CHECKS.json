@@ -1,0 +1,47 @@
+{
+  "java_tests": 125,
+  "java_failures": 0,
+  "python_tests": 15,
+  "python_failures": 0,
+  "protected_sha256_matches": {
+    "src/main/java/net/albiz/client/input/AlbizKeyPolling.java": true,
+    "src/main/java/net/albiz/client/input/KeyCapture.java": true,
+    "src/main/java/net/albiz/client/input/ModuleKeybinds.java": true,
+    "src/main/resources/LICENSE_anubis": true,
+    "src/main/resources/assets/albiz/natives/android-arm64/libimgui-java64.so": true,
+    "LICENSE": true,
+    "NOTICE.md": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeModels.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeMaterial.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/KnifeSkin.java": true,
+    "src/main/java/net/albiz/client/module/impl/render/WeaponInspectModule.java": true
+  },
+  "previous_character_assets_unchanged": {
+    "assets/albiz/characters/cj.anc": true,
+    "assets/albiz/characters/guts.anc": true,
+    "assets/albiz/characters/neighbor.anc": true,
+    "assets/albiz/characters/subaru.anc": true
+  },
+  "mixin_accessor_static_audit": {
+    "class_339": {
+      "field_41095": true
+    },
+    "class_4267$class_4269": {
+      "field_19114": true
+    },
+    "class_4267$class_4270": {
+      "field_19123": true,
+      "field_42874": true
+    },
+    "class_500": {
+      "field_3049": true,
+      "method_2534": true
+    }
+  },
+  "runtime_verification": "NOT PERFORMED: no Minecraft/GL/Android/live-server/screenshot test",
+  "full_native_ui_localization_audit": "PARTIAL: common labels translated; help strings remain uncatalogued/English",
+  "reference_loading_screen_found": false,
+  "remote_profile_sharing": false,
+  "github_push": false,
+  "hotfix": "UiSounds null ClickGui startup: register before migrate; defer audio until initialization completes; preinit callback regression test"
+}

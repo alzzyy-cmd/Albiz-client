@@ -1,0 +1,307 @@
+package net.albiz.client.module;
+
+import java.util.ArrayList;
+import java.util.List;
+import net.albiz.client.easyplace.EasyPlaceModules;
+import net.albiz.client.easyplace.builder.AreaMinerModule;
+import net.albiz.client.easyplace.builder.ElytraAutopilotModule;
+import net.albiz.client.easyplace.builder.TunnelMinerModule;
+import net.albiz.client.module.impl.client.HotkeysModule;
+import net.albiz.client.module.impl.client.HudModule;
+import net.albiz.client.module.impl.client.PerformanceModule;
+import net.albiz.client.module.impl.client.RadarModule;
+import net.albiz.client.module.impl.client.RegionMapModule;
+import net.albiz.client.module.impl.client.SpotifyHudModule;
+import net.albiz.client.module.impl.combat.AimAssistModule;
+import net.albiz.client.module.impl.combat.AnchorAuraModule;
+import net.albiz.client.module.impl.combat.AutoCityModule;
+import net.albiz.client.module.impl.combat.AutoInvTotemModule;
+import net.albiz.client.module.impl.combat.AutoTotemModule;
+import net.albiz.client.module.impl.combat.AutoTrapModule;
+import net.albiz.client.module.impl.combat.CrystalAuraModule;
+import net.albiz.client.module.impl.combat.CrystalMacroModule;
+import net.albiz.client.module.impl.combat.CrystalOptimizerModule;
+import net.albiz.client.module.impl.combat.FakeLagModule;
+import net.albiz.client.module.impl.combat.FastXpModule;
+import net.albiz.client.module.impl.combat.FriendGuardModule;
+import net.albiz.client.module.impl.combat.HoverTotemModule;
+import net.albiz.client.module.impl.combat.JumpResetModule;
+import net.albiz.client.module.impl.combat.KeyThrowModule;
+import net.albiz.client.module.impl.combat.KillAuraModule;
+import net.albiz.client.module.impl.combat.KnockbackDelayModule;
+import net.albiz.client.module.impl.combat.MaceModule;
+import net.albiz.client.module.impl.combat.ShieldBreakerModule;
+import net.albiz.client.module.impl.combat.SingleAnchorMacroModule;
+import net.albiz.client.module.impl.combat.SpearLungeModule;
+import net.albiz.client.module.impl.combat.TriggerbotModule;
+import net.albiz.client.module.impl.combat.WTapRecodeModule;
+import net.albiz.client.module.impl.combat.bot.CrystalBotModule;
+import net.albiz.client.module.impl.combat.bot.SwordBotModule;
+import net.albiz.client.module.impl.donutmacros.AhSellModule;
+import net.albiz.client.module.impl.donutmacros.AhSniperModule;
+import net.albiz.client.module.impl.donutmacros.AutoSellModule;
+import net.albiz.client.module.impl.donutmacros.AutoTpaHereModule;
+import net.albiz.client.module.impl.donutmacros.OrderAhSellerModule;
+import net.albiz.client.module.impl.donutmacros.OrderDropperModule;
+import net.albiz.client.module.impl.donutmacros.PanicPayModule;
+import net.albiz.client.module.impl.donutmacros.TpMacroModule;
+import net.albiz.client.module.impl.misc.AirStuckModule;
+import net.albiz.client.module.impl.misc.AmethystBypassModule;
+import net.albiz.client.module.impl.misc.AntiGhostBlockModule;
+import net.albiz.client.module.impl.misc.AntiTrapModule;
+import net.albiz.client.module.impl.misc.AntiVanishModule;
+import net.albiz.client.module.impl.misc.AutoClickerModule;
+import net.albiz.client.module.impl.misc.AutoEatModule;
+import net.albiz.client.module.impl.misc.AutoReconnectModule;
+import net.albiz.client.module.impl.misc.AutoRelogModule;
+import net.albiz.client.module.impl.misc.BlockNotifierModule;
+import net.albiz.client.module.impl.misc.ChatMacroModule;
+import net.albiz.client.module.impl.misc.CoordSnapperModule;
+import net.albiz.client.module.impl.misc.DiscordPresenceModule;
+import net.albiz.client.module.impl.misc.DonutNoFallModule;
+import net.albiz.client.module.impl.misc.FakeStats;
+import net.albiz.client.module.impl.misc.FastUseModule;
+import net.albiz.client.module.impl.misc.FreecamModule;
+import net.albiz.client.module.impl.misc.GoliathRtpModule;
+import net.albiz.client.module.impl.misc.LegitAutoToolModule;
+import net.albiz.client.module.impl.misc.NameProtectModule;
+import net.albiz.client.module.impl.misc.NetheriteFinderModule;
+import net.albiz.client.module.impl.misc.NoInvLeakModule;
+import net.albiz.client.module.impl.misc.PlayerBypassModule;
+import net.albiz.client.module.impl.misc.PlayerDetectionModule;
+import net.albiz.client.module.impl.misc.SkinChangeModule;
+import net.albiz.client.module.impl.misc.SlowSwingModule;
+import net.albiz.client.module.impl.misc.SpamModule;
+import net.albiz.client.module.impl.misc.SpawnerProtectModule;
+import net.albiz.client.module.impl.misc.StaffListModule;
+import net.albiz.client.module.impl.misc.StaffLiveModule;
+import net.albiz.client.module.impl.misc.TridentUtilModule;
+import net.albiz.client.module.impl.misc.WeatherNotifierModule;
+import net.albiz.client.module.impl.movement.AutoJumpModule;
+import net.albiz.client.module.impl.movement.AutoWalkModule;
+import net.albiz.client.module.impl.movement.BoatFlyModule;
+import net.albiz.client.module.impl.movement.BoatNoclipModule;
+import net.albiz.client.module.impl.movement.ClickTpModule;
+import net.albiz.client.module.impl.movement.ElytraFlyModule;
+import net.albiz.client.module.impl.movement.ElytraSwapModule;
+import net.albiz.client.module.impl.movement.EntityControlModule;
+import net.albiz.client.module.impl.movement.EntitySpeedModule;
+import net.albiz.client.module.impl.movement.FlyModule;
+import net.albiz.client.module.impl.movement.JesusModule;
+import net.albiz.client.module.impl.movement.NoJumpDelayModule;
+import net.albiz.client.module.impl.movement.SneakModule;
+import net.albiz.client.module.impl.movement.SpeedModule;
+import net.albiz.client.module.impl.movement.SpiderModule;
+import net.albiz.client.module.impl.movement.SprintModule;
+import net.albiz.client.module.impl.movement.TridentBoostModule;
+import net.albiz.client.module.impl.render.AtmosphereModule;
+import net.albiz.client.module.impl.render.BetterSusChunkModule;
+import net.albiz.client.module.impl.render.BlockEntityDebugModule;
+import net.albiz.client.module.impl.render.BlockEspModule;
+import net.albiz.client.module.impl.render.BlockOverlayModule;
+import net.albiz.client.module.impl.render.ChunkScannerModule;
+import net.albiz.client.module.impl.render.ColorGradingModule;
+import net.albiz.client.module.impl.render.CustomCrosshairModule;
+import net.albiz.client.module.impl.render.CustomFovModule;
+import net.albiz.client.module.impl.render.CustomGlintModule;
+import net.albiz.client.module.impl.render.EspModule;
+import net.albiz.client.module.impl.render.FloatingRelicsModule;
+import net.albiz.client.module.impl.render.FreelookModule;
+import net.albiz.client.module.impl.render.FullbrightModule;
+import net.albiz.client.module.impl.render.HandAuraModule;
+import net.albiz.client.module.impl.render.HandModelModule;
+import net.albiz.client.module.impl.render.HandsModule;
+import net.albiz.client.module.impl.render.HitParticlesModule;
+import net.albiz.client.module.impl.render.HoleEspModule;
+import net.albiz.client.module.impl.render.ItemEspModule;
+import net.albiz.client.module.impl.render.JumpCirclesModule;
+import net.albiz.client.module.impl.render.LightEspModule;
+import net.albiz.client.module.impl.render.LowHealthWarningModule;
+import net.albiz.client.module.impl.render.MotionBlurModule;
+import net.albiz.client.module.impl.render.NametagsModule;
+import net.albiz.client.module.impl.render.NoRenderModule;
+import net.albiz.client.module.impl.render.PearlTrajectoryModule;
+import net.albiz.client.module.impl.render.WolfCrestModule;
+import net.albiz.client.module.impl.render.RelicParticlesModule;
+import net.albiz.client.module.impl.render.ShaderEspModule;
+import net.albiz.client.module.impl.render.SpawnerNametagsModule;
+import net.albiz.client.module.impl.render.SpawnerNotifierModule;
+import net.albiz.client.module.impl.render.StorageEspModule;
+import net.albiz.client.module.impl.render.SusChunkFinderModule;
+import net.albiz.client.module.impl.render.SwingAnimationModule;
+import net.albiz.client.module.impl.render.TargetEspModule;
+import net.albiz.client.module.impl.render.TimeChangerModule;
+import net.albiz.client.module.impl.render.TotemSpiritModule;
+import net.albiz.client.module.impl.render.TracersModule;
+import net.albiz.client.module.impl.render.TrajectoriesModule;
+import net.albiz.client.module.impl.render.WaypointsModule;
+import net.albiz.client.module.impl.render.WeaponInspectModule;
+import net.albiz.client.module.impl.render.XrayModule;
+import net.albiz.client.module.impl.render.ZoomModule;
+import net.albiz.client.module.impl.render.character.CharacterModule;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+
+@Environment(EnvType.CLIENT)
+public final class BuiltinModuleProvider implements ModuleProvider {
+   @Override
+   public String id() {
+      return "builtin";
+   }
+
+   @Override
+   public List<ClientModule> createModules() {
+      List<ClientModule> modules = new ArrayList<>(
+         List.of(
+            new AimAssistModule(),
+            new SingleAnchorMacroModule(),
+            new AnchorAuraModule(),
+            new CrystalMacroModule(),
+            new CrystalAuraModule(),
+            new AutoCityModule(),
+            new TriggerbotModule(),
+            new KillAuraModule(),
+            new ShieldBreakerModule(),
+            new AutoTrapModule(),
+            new FakeLagModule(),
+            new KnockbackDelayModule(),
+            new SwordBotModule(),
+            new CrystalBotModule(),
+            new MaceModule(),
+            new HoverTotemModule(),
+            new FastXpModule(),
+            new AutoTotemModule(),
+            new AutoInvTotemModule(),
+            new WTapRecodeModule(),
+            new CrystalOptimizerModule(),
+            new FriendGuardModule(),
+            new SpearLungeModule(),
+            new JumpResetModule(),
+            new KeyThrowModule(),
+            new LegitAutoToolModule(),
+            new AutoClickerModule(),
+            new FastUseModule(),
+            new AutoEatModule(),
+            new AutoReconnectModule(),
+            new AutoRelogModule(),
+            new AirStuckModule(),
+            new PlayerBypassModule(),
+            new TunnelMinerModule(),
+            new AreaMinerModule(),
+            new TridentUtilModule(),
+            new DonutNoFallModule(),
+            new AntiGhostBlockModule(),
+            new AmethystBypassModule(),
+            new FreecamModule(),
+            new SpamModule(),
+            new CoordSnapperModule(),
+            new ChatMacroModule(),
+            new NameProtectModule(),
+            new NoInvLeakModule(),
+            new WeatherNotifierModule(),
+            new BlockNotifierModule(),
+            new FlyModule(),
+            new AutoWalkModule(),
+            new AutoJumpModule(),
+            new ClickTpModule(),
+            new BoatFlyModule(),
+            new BoatNoclipModule(),
+            new ElytraFlyModule(),
+            new ElytraSwapModule(),
+            new ElytraAutopilotModule(),
+            new EntityControlModule(),
+            new EntitySpeedModule(),
+            new JesusModule(),
+            new SneakModule(),
+            new SpeedModule(),
+            new SpiderModule(),
+            new SprintModule(),
+            new NoJumpDelayModule(),
+            new TridentBoostModule(),
+            new SlowSwingModule(),
+            new SwingAnimationModule(),
+            new WeaponInspectModule(),
+            new HandModelModule(),
+            new HandsModule(),
+            new SkinChangeModule(),
+            new net.albiz.client.module.impl.client.SoundFeedbackModule(),
+            new net.albiz.client.port.SoberAdapter("spawner-beam",new net.albiz.client.port.sober.modules.SpawnerBeam()),
+            new net.albiz.client.port.SoberAdapter("block-entity-esp",new net.albiz.client.port.sober.modules.BlockEntityESP()),
+            new net.albiz.client.port.SoberAdapter("hive-finder",new net.albiz.client.port.sober.modules.ChunkFinder()),
+            new net.albiz.client.port.SoberAdapter("suspicious-esp",new net.albiz.client.port.sober.modules.SuspiciousESP()),
+            new LightEspModule(),
+            new FullbrightModule(),
+            new EspModule(),
+            new ShaderEspModule(),
+            new NametagsModule(),
+            new WaypointsModule(),
+            new SpawnerNametagsModule(),
+            new BlockEspModule(),
+            new BlockOverlayModule(),
+            new FreelookModule(),
+            new HoleEspModule(),
+            new PearlTrajectoryModule(),
+            new TrajectoriesModule(),
+            new ItemEspModule(),
+            new XrayModule(),
+            new NoRenderModule(),
+            new CustomFovModule(),
+            new ZoomModule(),
+            new CustomCrosshairModule(),
+            new ChunkScannerModule(),
+            new net.albiz.client.module.impl.render.MotionScannerModule(),
+            new net.albiz.client.module.impl.render.SoundDebugModule(),
+            new net.albiz.client.module.impl.render.ChunkDiagnosticsModule(),
+            new net.albiz.client.module.impl.render.SusChunkModule(),
+            new net.albiz.client.module.impl.render.BedrockVoidEspModule(),
+            new net.albiz.client.module.impl.render.SeedChunkFinderModule(),
+            new net.albiz.client.module.impl.render.SkeletonEspModule(),
+            new NetheriteFinderModule(),
+            new StorageEspModule(),
+            new net.albiz.client.module.impl.misc.AutoRespawnModule(),
+            // Present in the source and referenced by the FakeStats mixins, but never registered, so they could not be enabled.
+            new FakeStats(),
+            new AntiVanishModule(),
+            new net.albiz.client.module.impl.render.ActivityInspectorModule(),
+            new net.albiz.client.module.impl.render.AbyzDebugModule(),
+            new net.albiz.client.module.impl.render.CustomTotemsModule(),
+            new net.albiz.client.module.impl.client.CreamyKeysModule(),
+            new net.albiz.client.module.impl.misc.StaffHudModule(),
+            new CustomGlintModule(),
+            new HitParticlesModule(),
+            new TargetEspModule(),
+            new RelicParticlesModule(),
+            new MotionBlurModule(),
+            new net.albiz.client.module.impl.render.SkyModule(),
+            new JumpCirclesModule(),
+            new WolfCrestModule(),
+            new CharacterModule(),
+            new TimeChangerModule(),
+            new LowHealthWarningModule(),
+            new HudModule(),
+            new RegionMapModule(),
+            new RadarModule(),
+            new HotkeysModule(),
+            new TracersModule(),
+            new PerformanceModule(),
+            new DiscordPresenceModule(),
+            new net.albiz.client.module.impl.misc.PacketCaptureModule(),
+            new AutoTpaHereModule(),
+            new OrderAhSellerModule(),
+            new AhSellModule(),
+            new AutoSellModule(),
+            new TpMacroModule(),
+            new OrderDropperModule(),
+            new PanicPayModule(),
+            new AhSniperModule()
+         )
+      );
+      if (!net.albiz.client.platform.PlatformInfo.isMobile()) modules.add(new SpotifyHudModule());
+      modules.add(new net.albiz.client.module.impl.render.FriendLabelsModule());
+      if (EasyPlaceModules.available()) {
+         modules.addAll(EasyPlaceModules.create());
+      }
+
+      return modules;
+   }
+}
