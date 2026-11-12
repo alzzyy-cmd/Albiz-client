@@ -1,0 +1,82 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.16.3
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RecoveryTest > suppliedAndroidNativeIsActuallyArm64() FAILED
+    org.opentest4j.AssertionFailedError at RecoveryTest.java:83
+
+BakedHeroesTest > bothCharactersHaveArticulatedLimbs() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > subaruIsDetailedTexturedMesh() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > newReferenceCharactersHaveFiniteBoundedLods() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > allThreeDetailLevelsLoadWithMonotonicBudgets() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > allLodsHaveFinitePositionsAndValidTextureCoordinates() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > normalsAreUnitLengthAtEveryLod() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+BakedHeroesTest > gutsIsDetailedTexturedMesh() FAILED
+    java.io.UncheckedIOException at BakedHeroesTest.java:11
+        Caused by: java.io.FileNotFoundException at BakedHeroesTest.java:11
+
+HeroGeometryTest > bothHeroesAlsoBuildAtDefaultMediumDetail() FAILED
+    java.io.UncheckedIOException at HeroGeometryTest.java:21
+        Caused by: java.io.FileNotFoundException at HeroGeometryTest.java:21
+
+HeroGeometryTest > subaruBuildsActualBoundedMesh() FAILED
+    java.io.UncheckedIOException at HeroGeometryTest.java:9
+        Caused by: java.io.FileNotFoundException at HeroGeometryTest.java:9
+
+HeroGeometryTest > gutsBuildsActualBoundedMesh() FAILED
+    java.io.UncheckedIOException at HeroGeometryTest.java:9
+        Caused by: java.io.FileNotFoundException at HeroGeometryTest.java:9
+
+SpriteRegressionTest > everyDeclaredFortnitePngProducesFiniteContour() FAILED
+    org.opentest4j.AssertionFailedError at SpriteRegressionTest.java:11
+
+RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
+    java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
+
+V1RegressionTest > mobileBudgetEnforced() FAILED
+    org.opentest4j.AssertionFailedError at V1RegressionTest.java:13
+
+252 tests completed, 14 failed
+
+> Task :test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-PC/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 22s
+4 actionable tasks: 2 executed, 2 up-to-date
