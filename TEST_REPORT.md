@@ -201,3 +201,22 @@ Run 43322676413 on GitHub Actions, after restoring binary assets from the older 
   `RecoveryTest.platformManualOverrideAndGlslSelection`, in code this work did not touch.
 - **Not done:** the game was not launched with these JARs. The Mobil JAR is the plain Gradle
   output; `tools/package_revision.py` (strip desktop natives, shrink images) was not run.
+
+## Update 2026-11-12 (fifth pass) — assets from the Sober reference JAR, Sober-style menu
+
+Run 43326612016 on GitHub Actions. `restore_assets.py` now restores binary assets from the Sober
+reference JAR (726 files) and the older Albiz JAR (59 files + Android native), all SHA-256
+verified. They are not stored in Git; CI and `restore_assets.py` recreate them.
+
+- **Build:** exit 0 for both. `dist/Albiz-PC.jar` (49.6 MB), `dist/Albiz-Mobil.jar` (42.3 MB;
+  desktop ImGui natives removed, as `tools/package_revision.py` does; images not downscaled).
+- **Gradle tests:** 252 run. PC 241 passed / 11 failed; Mobil 240 passed / 12 failed.
+  Remaining failures: `guts`/`subaru` character models (10 tests) and one alert sound
+  (`sounds/alerts/chunk_found.ogg`) are Albiz-only files found in neither JAR; Mobil also fails
+  `RecoveryTest.platformManualOverrideAndGlslSelection` (code not touched by this work).
+- **Repository Python suites (with assets restored):** 6 of 8 pass (was 4). Still failing:
+  `test_refresh_assets` (1: Albiz-only sound recordings) and `test_requested_revision`
+  (3: alert sound, flag images, `discovery_mark.png`).
+- **Menu:** the open-GUI key now opens the Sober-style menu (`SoberUi.menu()`) by default.
+  "Menu style" in the theme settings switches back to the classic Albiz menu; holding Left Ctrl
+  while pressing the key opens the other one. Compiled; **not seen in game**.

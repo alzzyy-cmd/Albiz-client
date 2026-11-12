@@ -4,12 +4,21 @@ Bu rehber, bu ZIP'teki kaynaktan PC ve Mobil JAR'larının nasıl derleneceğini
 Proje **Maven değil, Gradle** kullanır (Fabric Loom). "Maven" yalnızca bağımlılıkların
 indirildiği depoların adıdır.
 
-**Durum (2026-11-12):** iki proje de GitHub Actions üzerinde derlendi (`build exit=0`) ve
-`albiz-1.0.jar` üretildi. Depodaki `.github/workflows/build.yml` her push'ta iki projeyi derler,
-JAR'ları "Artifacts" olarak yükler ve özet günlükleri `ci-logs/` klasörüne yazar. Bu JAR'lar
-eski bir Albiz JAR'ından kurtarılan dosyalarla (fontlar, bazı resimler, Android kütüphanesi;
-bkz. `RESTORED-ASSETS.md`) derlendi ve `dist/` klasörüne yazıldı. Bazı modeller, sesler ve
-resimler hâlâ eksik; tam JAR için 3. bölümdeki geri yükleme adımları gerekir.
+**Durum (2026-11-12):** iki proje de GitHub Actions üzerinde derleniyor (`build exit=0`).
+`.github/workflows/build.yml` her push'ta: `restore_assets.py` ile eksik resim/font/ses/model
+dosyalarını geri yükler, iki projeyi derler, JAR'ları `dist/` klasörüne ve özet günlükleri
+`ci-logs/` klasörüne yazar.
+
+**En kısa yol (eski Albiz JAR'ı olmadan):**
+
+```bash
+python3 restore_assets.py          # Sober JAR'ı ve eski Albiz JAR'ından dosyaları geri yükler
+cd Albiz-PC && bash gradlew build -x test --max-workers=2
+```
+
+`restore_assets.py` dosyaları `github.com/alzzyy-cmd/Anubis` deposundan alır ve SHA-256 ile
+doğrular. `guts`/`subaru` modelleri, bayrak resimleri ve bazı Albiz sesleri bu kaynaklarda
+yoktur; onlar için 3. bölümdeki `restore_resources.py` + güncel Albiz JAR'ı gerekir.
 
 ## 1. ZIP'in içeriği
 

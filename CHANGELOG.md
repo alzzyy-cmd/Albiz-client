@@ -141,3 +141,12 @@ src/main/resources/assets/albiz/lang/{en_us,tr_tr}.json
 - Added `.github/workflows/build.yml`: builds both projects on GitHub Actions, uploads the JARs
   as artifacts and writes log summaries to `ci-logs/`.
 - Both projects now build. Fixed `PerformanceModule` so `V1RegressionTest.mobileBudgetEnforced` passes.
+
+## 2026-11-12 (fifth pass)
+- **Sober-style menu is now the default.** The ported Sober menu (Dropdown / Panel) already
+  existed in `port/soberui` but the open-GUI key never opened it. New theme setting
+  "Menu style" (Sober / Albiz); Left Ctrl + key opens the other menu.
+- `restore_assets.py`: restores fonts, images, sounds and models from the Sober reference JAR
+  and the older Albiz JAR (both in `alzzyy-cmd/Anubis`), SHA-256 verified. Restored files are
+  git-ignored. CI runs it before building.
+- CI publishes `dist/Albiz-PC.jar` and `dist/Albiz-Mobil.jar` (mobile without desktop natives).
