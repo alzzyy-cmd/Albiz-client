@@ -50,19 +50,16 @@
 65:RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
 66-    java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
 67-
-68:V1RegressionTest > mobileBudgetEnforced() FAILED
-69-    org.opentest4j.AssertionFailedError at V1RegressionTest.java:13
-70-
-71-252 tests completed, 15 failed
+68-252 tests completed, 14 failed
 --
-73:> Task :test FAILED
-74-
-75-FAILURE: Build failed with an exception.
-76-
-77:* What went wrong:
-78-Execution failed for task ':test'.
-79-> There were failing tests. See the report at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-Mobil/build/reports/tests/test/index.html
-80-
+70:> Task :test FAILED
+71-
+72-FAILURE: Build failed with an exception.
+73-
+74:* What went wrong:
+75-Execution failed for task ':test'.
+76-> There were failing tests. See the report at: file:///home/runner/work/Albiz-client/Albiz-client/Albiz-Mobil/build/reports/tests/test/index.html
+77-
 --
-84:BUILD FAILED in 23s
-85-4 actionable tasks: 2 executed, 2 up-to-date
+81:BUILD FAILED in 19s
+82-4 actionable tasks: 2 executed, 2 up-to-date
