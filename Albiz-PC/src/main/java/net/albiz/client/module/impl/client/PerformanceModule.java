@@ -71,12 +71,8 @@ public final class PerformanceModule extends ClientModule implements HudOverlayP
 
    public static long scanBudgetNanos() {
       PerformanceModule module = ModuleRegistry.get(PerformanceModule.class);
-      boolean mobile = net.albiz.client.platform.BuildProfile.mobile();
-      if (module == null) {
-         return mobile ? 750000L : 2000000L;
-      }
-
-      return (long)(profile(module).scanBudgetMs(module.scanBudget.get(), mobile) * 1000000.0F);
+      long requested = module == null ? 2000000L : (long)(profile(module).scanBudgetMs(module.scanBudget.get(), false) * 1000000.0F);
+      return net.albiz.client.platform.BuildProfile.mobile() ? Math.min(requested, 750000L) : requested;
    }
 
    private static net.albiz.client.perf.PerformanceProfile profile(PerformanceModule module) {
