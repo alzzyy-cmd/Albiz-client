@@ -13,9 +13,6 @@ Fabric Loom: 1.16.3
 
 > Task :test
 
-RecoveryTest > suppliedAndroidNativeIsActuallyArm64() FAILED
-    org.opentest4j.AssertionFailedError at RecoveryTest.java:83
-
 RecoveryTest > platformManualOverrideAndGlslSelection() FAILED
     org.opentest4j.AssertionFailedError at RecoveryTest.java:45
 
@@ -65,7 +62,7 @@ SpriteRegressionTest > everyDeclaredFortnitePngProducesFiniteContour() FAILED
 RequestedRevisionTest > audioIsUserAssetAndThrottled() FAILED
     java.nio.file.NoSuchFileException at RequestedRevisionTest.java:20
 
-252 tests completed, 14 failed
+252 tests completed, 13 failed
 
 > Task :test FAILED
 
@@ -78,5 +75,5 @@ Execution failed for task ':test'.
 * Try:
 > Run with --scan to get full insights from a Build Scan (powered by Develocity).
 
-BUILD FAILED in 19s
+BUILD FAILED in 22s
 4 actionable tasks: 2 executed, 2 up-to-date
